@@ -17,89 +17,193 @@
             background: url('https://kathmandusite.com/wp-content/uploads/2016/07/kheader.jpg') repeat center center;
         }
 
+        body{
+            background: #000000 url('https://kathmandusite.com/wp-content/uploads/2020/04/post3.jpg') repeat fixed center top
+        }
+
+        .minh-100{
+            min-height: 100px;
+        }
+
+        .border.col-12.h-100{
+            padding: 12px;
+            background: #fdeec2 ;
+            border-color: #e7dcba!important;
+            border-radius: 10px;
+            -webkit-box-shadow: 0px 5px 15px 1px rgb(62 59 59 / 11%);
+            box-shadow: 0px 5px 15px 1px #3e3b3b1c;
+        }
+
+        h6.text-center {
+            min-height: 53px;
+            display: flex;
+            align-content: center;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            border-color: #f5d062!important;
+            padding-bottom: 11px;
+            border-width: 2px!important;
+            border-bottom: solid;
+        }
+
+        .accordion-body.col-12.desserts{
+            background: #FAF2DB url(https://images.vexels.com/media/users/3/163994/isolated/lists/f06fc39…-festival-de-icono-de-mandala-de-primavera.png) repeat center top;
+            background-size: 71px;
+            background-position-y: center;
+        }
+
     </style>
 </head>
 <body>
     <div class="container">
         <div>
-         <nav class="fixed-top navbar navbar-dark">
+           <nav class="fixed-top navbar navbar-dark">
             <div class="container-fluid kheader pb-2">
-                <img src="https://kathmandusite.com/wp-content/uploads/2016/06/Letra-kathmandu.png" class="m-auto">
+                <img src="https://kathmandusite.com/wp-content/uploads/2016/06/Letra-kathmandu.png" class="m-auto pb-3 pt-3">
             </div>
-            <div class="container-fluid bg-dark">
-                <button class="navbar-toggler hidden" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <h3 class="text-center">Nuestro Menú</h3>
-          </div>
-      </nav>
-  </div>
+        </nav>
+    </div>
 
 
-  <div style="margin-top: 120px;">
-    <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                    Bebidas
-                </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+    <div style="margin-top: 120px;">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Bebidas
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Entradas
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Platos fuertes
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Postres
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body col-12 desserts">
+                        <div class="row" >
+
+
+                            <div class="col-6 mb-2">
+                                <div class="border col-12 h-100">
+                                    <div class="col">
+                                        <h6 class="text-center"><strong>SRING ROLLS DULCES</strong></h6>
+                                    </div>
+                                    <div class="minh-100">
+                                        <p class="small">Rollitos rellenos de manzana con helado de vainilla.</p>
+                                    </div>
+                                    <div class="text-end">
+                                        <h6>$13.500</h6>
+                                    </div>
+                                </div>
+                            </div> 
+
+                            <div class="col-6 mb-2">
+                                <div class="border col-12 h-100">
+                                    <div class="col">
+                                        <h6 class="text-center"><strong>BANANAS TEMPURA</strong></h6>
+                                    </div>
+                                    <div class="minh-100">
+                                        <p class="small">Bananitos rebosados, acompañados de helado de vainilla y salsa de chocolate.</p>
+                                    </div>
+                                    <div class="text-end">
+                                        <h6>$13.500</h6>
+                                    </div>
+                                </div> 
+                            </div>
+
+                            <div class="col-6 mb-2">
+                                <div class="border col-12 h-100">
+                                    <div class="col">
+                                        <h6 class="text-center"><strong>LYCHEE PASSION</strong></h6>
+                                    </div>
+                                    <div class="minh-100">
+                                        <p class="small">Copa de helado de maracuyá y lychees.</p>
+                                    </div>
+                                    <div class="text-end">
+                                        <h6>$14.500</h6>
+                                    </div>
+                                </div> 
+                            </div>
+
+                            <div class="col-6 mb-2">
+                                <div class="border col-12 h-100">
+                                    <div class="col">
+                                        <h6 class="text-center"><strong>LYCHEE FRUTOS ROJOS</strong></h6>
+                                    </div>
+                                    <div class="minh-100">
+                                        <p class="small">Copa de helado de frutos rojos y lychees.</p>
+                                    </div>
+                                    <div class="text-end">
+                                        <h6>$14.500</h6>
+                                    </div>
+                                </div> 
+                            </div>
+
+                            <div class="col-6 mb-2">
+                                <div class="border col-12 h-100">
+                                    <div class="col">
+                                        <h6 class="text-center"><strong>OPCIÓN DEL CHEFF</strong></h6>
+                                    </div>
+                                    <div class="minh-100">
+                                        <p class="small">Pregunte por la opción del día.</p>
+                                    </div>
+                                    <div class="text-end">
+                                        <h6>$14.500</h6>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Otros
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Entradas
-                </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-        </div>
     </div>
-    <div class="accordion-item">
-        <h2 class="accordion-header" id="headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-             Platos fuertes
-         </button>
-     </h2>
-     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-    </div>
-</div>
-</div>
-<div class="accordion-item">
-    <h2 class="accordion-header" id="headingFour">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-         Postres
-     </button>
- </h2>
- <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-  <div class="accordion-body">
-    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-</div>
-</div>
-</div>
-<div class="accordion-item">
-    <h2 class="accordion-header" id="headingFive">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-         Otros
-     </button>
- </h2>
- <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-  <div class="accordion-body">
-    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-</div>
-</div>
-</div>
-</div>
-</div>
 </div>
 
 </body>
