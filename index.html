@@ -1,3 +1,32 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+
+@bmao92 
+bmao92
+/
+borrador-kathmandu
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+borrador-kathmandu/index.html
+@bmao92
+bmao92 Update index.html
+Latest commit 0b12277 12 days ago
+History
+1 contributor
+287 lines (267 sloc)  13 KB
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -92,14 +121,14 @@
 
     .fuuu{
         background: #fff8f8c2 url("https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/3164779/mandala-clipart-md.png") repeat center top;
-    background-size: 77px;
-    background-position-x: center;
-    background-position-y: center;
-    background-blend-mode: screen;
+        background-size: 77px;
+        background-position-x: center;
+        background-position-y: center;
+        background-blend-mode: screen;
     }
 </style>
 </head>
-<body>
+<body class="modal-open">
     <div class="container" style="max-width: 500px;">
         <div>
            <nav class="fixed-top navbar navbar-dark">
@@ -121,163 +150,182 @@
                 <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                        Aquí se filtraria como en los platos fuertes, al darle a cada icono lo redirecciona a la opcion seleccionada
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Entradas
-                    </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                       Aqui seria similar al de postres (ya casi terminado) la idea es colocar un botón donde levante un modal (es una ventanita sobre la misma vista con una x para cerrar), donde se muestre la foto y algunos detalles adicionales.
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Platos fuertes
-                    </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                    <div class="accordion-body fuuu">
-                     <div class="row fuer">
-                        <a class="col-4 btn">
-                            <div class="divCircle" style="background: #c18282;">
-                                <img src="https://cdn-icons-png.flaticon.com/512/701/701958.png">
-                            </div>
-                            <h6>Res</h6>
-                        </a>
-                        <a class="col-4 btn">
-                            <div class="divCircle " style="background: #ffb3cc;">
-                                <img src="https://es.seaicons.com/wp-content/uploads/2015/06/Animals-Pig-icon.png">
-                            </div>
-                            <h6>Cerdo</h6>
-                        </a>
-                        <a class="col-4 btn">
-                            <div class="divCircle " style="background: #f3ebb2;">
-                                <img src="https://img.icons8.com/ios/500/chicken.png">
-                            </div>
-                            <h6>Pollo</h6>
-                        </a>
-                        <a class="col-4 btn">
-                            <div class="divCircle " style="background: #f5e0e5;">
-                                <img src="https://www.merinosoto.com/wp-content/uploads/2020/05/icon_carnes_de_cordero.png">
-                            </div>
-                            <h6>Cordero</h6>
-                        </a>
-                        <a class="col-4 btn">
-                            <div class="divCircle " style="background: #c6dffd;">
-                                <img src="http://download.seaicons.com/download/i87570/icons8/ios7/icons8-ios7-animals-clown-fish.ico">
-                            </div>
-                            <h6>Pescado</h6>
-                        </a>
-                        <a class="col-4 btn">
-                            <div class="divCircle " style="background: #f8bbff;">
-                                <img src="https://www.maixabel.com/wp-content/uploads/2020/02/Maixabel-Icono-Marisco-Crustaceo-Langostino.png">
-                            </div>
-                            <h6>Langostinos & Camarones</h6>
-                        </a>
-                        <a class="col-4 btn">
-                            <div class="divCircle " style="background: #85e373;">
-                                <img src="https://greenbear.es/wp-content/uploads/2020/07/hoja-icono-canamo.png">
-                            </div>
-                            <h6>Vegetariano</h6>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFour">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    Postres
+                   </div>
+               </div>
+           </div>
+           <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Entradas
                 </button>
             </h2>
-            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                <div class="accordion-body col-12 desserts">
-                    <div class="row" >
-
-
-                        <div class="col-6 mb-2">
-                            <div class="border col-12 h-100">
-                                <div class="col">
-                                    <h6 class="text-center"><strong>SRING ROLLS DULCES</strong></h6>
-                                </div>
-                                <div class="minh-100">
-                                    <p class="small">Rollitos rellenos de manzana con helado de vainilla.</p>
-                                </div>
-                                <div class="text-end">
-                                    <h6>$13.500</h6>
-                                </div>
-                            </div>
-                        </div> 
-
-                        <div class="col-6 mb-2">
-                            <div class="border col-12 h-100">
-                                <div class="col">
-                                    <h6 class="text-center"><strong>BANANAS TEMPURA</strong></h6>
-                                </div>
-                                <div class="minh-100">
-                                    <p class="small">Bananitos rebosados, acompañados de helado de vainilla y salsa de chocolate.</p>
-                                </div>
-                                <div class="text-end">
-                                    <h6>$13.500</h6>
-                                </div>
-                            </div> 
-                        </div>
-
-                        <div class="col-6 mb-2">
-                            <div class="border col-12 h-100">
-                                <div class="col">
-                                    <h6 class="text-center"><strong>LYCHEE PASSION</strong></h6>
-                                </div>
-                                <div class="minh-100">
-                                    <p class="small">Copa de helado de maracuyá y lychees.</p>
-                                </div>
-                                <div class="text-end">
-                                    <h6>$14.500</h6>
-                                </div>
-                            </div> 
-                        </div>
-
-                        <div class="col-6 mb-2">
-                            <div class="border col-12 h-100">
-                                <div class="col">
-                                    <h6 class="text-center"><strong>OPCIÓN DEL CHEFF</strong></h6>
-                                </div>
-                                <div class="minh-100">
-                                    <p class="small">Pregunte por la opción del día.</p>
-                                </div>
-                                <div class="text-end">
-                                    <h6>$14.500</h6>
-                                </div>
-                            </div> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFive">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    Otros
-                </button>
-            </h2>
-            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                 en esta opción va las pipas, paquetes, adiciones y lo que se quiera colocar :p
-                </div>
+                   Aqui seria similar al de postres (ya casi terminado) la idea es colocar un botón donde levante un modal (es una ventanita sobre la misma vista con una x para cerrar), donde se muestre la foto y algunos detalles adicionales.
+               </div>
+           </div>
+       </div>
+       <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Platos fuertes
+            </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body fuuu">
+             <div class="row fuer">
+                <a class="col-4 btn">
+                    <div class="divCircle" style="background: #c18282;">
+                        <img src="https://cdn-icons-png.flaticon.com/512/701/701958.png">
+                    </div>
+                    <h6>Res</h6>
+                </a>
+                <a class="col-4 btn">
+                    <div class="divCircle " style="background: #ffb3cc;">
+                        <img src="https://es.seaicons.com/wp-content/uploads/2015/06/Animals-Pig-icon.png">
+                    </div>
+                    <h6>Cerdo</h6>
+                </a>
+                <a class="col-4 btn">
+                    <div class="divCircle " style="background: #f3ebb2;">
+                        <img src="https://img.icons8.com/ios/500/chicken.png">
+                    </div>
+                    <h6>Pollo</h6>
+                </a>
+                <a class="col-4 btn">
+                    <div class="divCircle " style="background: #f5e0e5;">
+                        <img src="https://www.merinosoto.com/wp-content/uploads/2020/05/icon_carnes_de_cordero.png">
+                    </div>
+                    <h6>Cordero</h6>
+                </a>
+                <a class="col-4 btn">
+                    <div class="divCircle " style="background: #c6dffd;">
+                        <img src="http://download.seaicons.com/download/i87570/icons8/ios7/icons8-ios7-animals-clown-fish.ico">
+                    </div>
+                    <h6>Pescado</h6>
+                </a>
+                <a class="col-4 btn">
+                    <div class="divCircle " style="background: #f8bbff;">
+                        <img src="https://www.maixabel.com/wp-content/uploads/2020/02/Maixabel-Icono-Marisco-Crustaceo-Langostino.png">
+                    </div>
+                    <h6>Langostinos & Camarones</h6>
+                </a>
+                <a class="col-4 btn">
+                    <div class="divCircle " style="background: #85e373;">
+                        <img src="https://greenbear.es/wp-content/uploads/2020/07/hoja-icono-canamo.png">
+                    </div>
+                    <h6>Vegetariano</h6>
+                </a>
             </div>
         </div>
     </div>
 </div>
-</div>
+<div class="accordion-item">
+    <h2 class="accordion-header" id="headingFour">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            Postres
+        </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+        <div class="accordion-body col-12 desserts">
+            <div class="row" >
 
+
+                <div class="col-6 mb-2">
+                    <div class="border col-12 h-100">
+                        <div class="col">
+                            <h6 class="text-center"><strong>SRING ROLLS DULCES</strong></h6>
+                        </div>
+                        <div class="minh-100">
+                            <p class="small">Rollitos rellenos de manzana con helado de vainilla.</p>
+                        </div>
+                        <div class="text-end">
+                            <h6>$13.500</h6>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="col-6 mb-2">
+                    <div class="border col-12 h-100">
+                        <div class="col">
+                            <h6 class="text-center"><strong>BANANAS TEMPURA</strong></h6>
+                        </div>
+                        <div class="minh-100">
+                            <p class="small">Bananitos rebosados, acompañados de helado de vainilla y salsa de chocolate.</p>
+                        </div>
+                        <div class="text-end">
+                            <h6>$13.500</h6>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-6 mb-2">
+                    <div class="border col-12 h-100">
+                        <div class="col">
+                            <h6 class="text-center"><strong>LYCHEE PASSION</strong></h6>
+                        </div>
+                        <div class="minh-100">
+                            <p class="small">Copa de helado de maracuyá y lychees.</p>
+                        </div>
+                        <div class="text-end">
+                            <h6>$14.500</h6>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-6 mb-2">
+                    <div class="border col-12 h-100">
+                        <div class="col">
+                            <h6 class="text-center"><strong>OPCIÓN DEL CHEFF</strong></h6>
+                        </div>
+                        <div class="minh-100">
+                            <p class="small">Pregunte por la opción del día.</p>
+                        </div>
+                        <div class="text-end">
+                            <h6>$14.500</h6>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="accordion-item">
+    <h2 class="accordion-header" id="headingFive">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            Otros
+        </button>
+    </h2>
+    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+         en esta opción va las pipas, paquetes, adiciones y lo que se quiera colocar :p
+     </div>
+ </div>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade show" id="exampleModalLive" tabindex="-1" aria-labelledby="exampleModalLiveLabel" aria-modal="true" role="dialog" style="display: block;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLiveLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+        <p>Woohoo, you're reading this text in a modal!</p>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </body>
 </html>
 <script type="text/javascript">
