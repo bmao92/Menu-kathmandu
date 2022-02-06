@@ -7,6 +7,9 @@
     <script src="https://kit.fontawesome.com/5b69d58259.js" crossorigin="anonymous"></script>
     <title>Menú Kathmandú</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <style type="text/css">
         /* styles bootstrap */
@@ -71,11 +74,11 @@
         }
 
         .divCircle img{
-         padding: 15px;
-         width: inherit;
-     }
+           padding: 15px;
+           width: inherit;
+       }
 
-     .fuer > .col-4{
+       .fuer > .col-4{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -115,7 +118,7 @@
     }
 </style>
 </head>
-<body class="modal-open">
+<body>
     <div class="container" style="max-width: 500px;">
         <div>
             <nav class="fixed-top navbar navbar-dark">
@@ -148,11 +151,11 @@
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                           Aqui seria similar al de postres (ya casi terminado) la idea es colocar un botón donde levante un modal (es una ventanita sobre la misma vista con una x para cerrar), donde se muestre la foto y algunos detalles adicionales.
-                       </div>
-                   </div>
-               </div>
-               <div class="accordion-item">
+                         Aqui seria similar al de postres (ya casi terminado) la idea es colocar un botón donde levante un modal (es una ventanita sobre la misma vista con una x para cerrar), donde se muestre la foto y algunos detalles adicionales.
+                     </div>
+                 </div>
+             </div>
+             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingThree">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                         Platos fuertes
@@ -160,7 +163,7 @@
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                     <div class="accordion-body fuuu">
-                     <div class="row fuer">
+                       <div class="row fuer">
                         <a class="col-4 btn">
                             <div class="divCircle" style="background: #c18282;">
                                 <img src="https://cdn-icons-png.flaticon.com/512/701/701958.png">
@@ -286,31 +289,33 @@
             </h2>
             <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                 en esta opción va las pipas, paquetes, adiciones y lo que se quiera colocar :p
-             </div>
-         </div>
-     </div>
- </div>
+                   en esta opción va las pipas, paquetes, adiciones y lo que se quiera colocar :p
+               </div>
+           </div>
+       </div>
+   </div>
 </div>
 </div>
-<div class="modal fade show" id="exampleModalLive" tabindex="-1" aria-labelledby="exampleModalLiveLabel" aria-modal="true" role="dialog" style="display: block;">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <img src="https://kathmandusite.com/wp-content/uploads/2016/07/01_BANNER_Visítanos-en-estas-vacaciones_6E.jpeg">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X
-            </button>
-        </div>
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <img src="https://raw.githubusercontent.com/bmao92/borrador-kathmandu/main/93bda0ad-11b5-4b41-b5c8-8b58260da6d2.jpg">
+      <button id="btnCloseModal" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X
+      </button>
+  </div>
+</div>
+</div>
 
-    </div>
-</div>
 </div>
 </div>
 </div>
 </div>
 </body>
 </html>
+
 <script type="text/javascript">
-    $("#perro").click(function () {
-        console.log("perro")
-    })
+    $( document ).ready(function() {
+         $("#exampleModalCenter").modal("toggle")
+    });
+
 </script>
