@@ -12,6 +12,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
         /* styles bootstrap */
         .navbar{
             padding-top:0;
@@ -31,8 +32,9 @@
 
         .border.col-12.h-100{
             padding: 12px;
-            background: #ffdcc9;
-            border-color: #e3c3b2!important;
+            background: rgb(246,223,205);
+            background: linear-gradient(90deg, rgba(246,223,205,1) 0%, rgba(243,227,211,1) 50%, rgba(249,232,204,1) 100%);
+            border-color: #d7c5b3!important;
             border-radius: 10px;
             -webkit-box-shadow: 0px 5px 15px 1px rgb(62 59 59 / 11%);
             box-shadow: 0px 5px 15px 1px #3e3b3b1c;
@@ -46,9 +48,9 @@
             flex-wrap: nowrap;
             justify-content: center;
             align-items: center;
-            border-color: #ffa26f!important;
+            border-color: #d7c5b3!important;
             padding-bottom: 11px;
-            border-width: 2px!important;
+            border-width: 1px!important;
             border-bottom: solid;
         }
 
@@ -74,11 +76,11 @@
         }
 
         .divCircle img{
-           padding: 15px;
-           width: inherit;
-       }
+         padding: 15px;
+         width: inherit;
+     }
 
-       .fuer > .col-4{
+     .fuer > .col-4{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -124,14 +126,41 @@
         text-align: center;
         background: rgb(136,19,29);
         background: linear-gradient(90deg, rgba(136,19,29,1) 0%, rgba(205,40,28,1) 25%, rgba(136,19,29,1) 50%, rgba(205,40,28,1) 75%, rgba(136,19,29,1) 100%);
+        font-family: 'Quintessential', cursive;
     }
 
     .divColorMenu{
         background: rgb(246,223,205);
         background: linear-gradient(90deg, rgba(246,223,205,1) 0%, rgba(243,227,211,1) 50%, rgba(249,232,204,1) 100%);
+        margin-bottom: 20px;
+    }
+    .divColorMenu > div:nth-child(2) {
+        margin-top: 0px!important;
+        border-top: none!important;
+        padding-top: 0px!important;
+    }
+    .divColorMenu > div:first-child {
+        margin-top: 0px!important;
+        border-top: none!important;
+        padding-top: 5px!important;
+    }
+    .divColorMenu > div {
+        margin-top: 10px;
+        border-top: 1px solid #d7c5b3;
+        padding-top: 10px;
     }
 
-
+.ir-arriba {
+    display:none;
+    padding:20px;
+    background:#024959;
+    font-size:20px;
+    color:#fff;
+    cursor:pointer;
+    position: fixed;
+    bottom:20px;
+    right:20px;
+}
 </style>
 </head>
 <body>
@@ -144,7 +173,6 @@
             </nav>
         </div>
 
-
         <div style="margin-top: 120px;">
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
@@ -155,10 +183,170 @@
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            Aquí se filtraria como en los platos fuertes, al darle a cada icono lo redirecciona a la opcion seleccionada
+                            <div class="row fuer">
+                                <!--   ======   CÓCTELES DE LA CASA   ======   -->
+                                <div class="divColorMenu">
+                                    <div class="RegionsTitle row">
+                                        <h5>CÓCTELES DE LA CASA</h5>
+                                    </div>
+
+                                    <div>
+                                        <h6><strong>KATHMANDÚ</strong></h6>
+                                        <p class="m-0">Ron, sake, vodka Smirnoff, Bols Amaretto, vino blanco y granadina.</p>
+                                        <div class="text-end">
+                                            <span class=""><strong>$33.500</strong></span>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h6><strong>BANGKOK DREAMS</strong></h6>
+                                        <p class="m-0">Tequila, ron, Jack Daniel's, vodka Smirnoff, zumo de naranja, piña y granadina.</p>
+                                        <div class="text-end">
+                                            <span class=""><strong>$32.500</strong></span>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h6><strong>DESIERTO ROJO</strong></h6>
+                                        <p class="m-0">Vodka Smirnoff, whisky, ron, tequila, zumo de naranja, granadina y cereza.</p>
+                                        <div class="text-end">
+                                            <span class=""><strong>$33.500</strong></span>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h6><strong>ESTAMBUL</strong></h6>
+                                        <p class="m-0">Vodka Smirnoff, ron, helado de mandarina, Convier de durazno y cereza.</p>
+                                        <div class="text-end">
+                                            <span class=""><strong>$33.500</strong></span>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h6><strong>DUBAI</strong></h6>
+                                        <p class="m-0">Bols Blue, crema de coco, cachaza, zumo de limón y cereza.</p>
+                                        <div class="text-end">
+                                            <span class=""><strong>$33.500</strong></span>
+                                        </div>
+                                    </div>
+
+                                     <div>
+                                        <h6><strong>SAGAMARTHA 8848 -EVEREST-</strong></h6>
+                                        <p class="m-0">Whiskey, Amaretto,Crema de whisky y Bols Blue.</p>
+                                        <div class="text-end">
+                                            <span class=""><strong>$33.500</strong></span>
+                                        </div>
+                                    </div>
+
+                                     <div>
+                                        <h6><strong>K2 8611</strong></h6>
+                                        <p class="m-0">Desc</p>
+                                        <div class="text-end">
+                                            <span class=""><strong>$33.500</strong></span>
+                                        </div>
+                                    </div>
+
+                                     <div>
+                                        <h6><strong>MAKALU 8485</strong></h6>
+                                        <p class="m-0">Desc</p>
+                                        <div class="text-end">
+                                            <span class=""><strong>$33.500</strong></span>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                                <!--   ======   PARA LLEGAR A LAS ALTAS CUMBRES   ======   -->
+                                <!--   <div class="divColorMenu">
+                                    <div class="RegionsTitle row">
+                                        <h5>PARA LLEGAR A LAS ALTAS CUMBRES</h5>
+                                    </div>
+                                    <div>
+                                        <h6><strong>Tit</strong></h6>
+                                        <p class="m-0">Desc</p>
+                                        <div class="text-end">
+                                            <span class=""><strong>$33.500</strong></span>
+                                        </div>
+                                    </div>
+                                </div> -->
+
+                                <!--   ======   EXÓTICOS CÓCTELES ORIENTALES   ======   -->
+                                <div class="divColorMenu">
+                                    <div class="RegionsTitle row">
+                                        <h5>EXÓTICOS CÓCTELES ORIENTALES</h5>
+                                    </div>
+                                    <div>
+                                        <h6><strong>Tit</strong></h6>
+                                        <p class="m-0">Desc</p>
+                                        <div class="text-end">
+                                            <span class=""><strong>$33.500</strong></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--   ======   CÓCTELES SIN LÍCOR   ======   -->
+                                <div class="divColorMenu">
+                                    <div class="RegionsTitle row">
+                                        <h5>CÓCTELES SIN LÍCOR</h5>
+                                    </div>
+                                    <div>
+                                        <h6><strong>KUTA</strong></h6>
+                                        <p class="m-0">Fresca bebida de hierbabuena, crema de coco, Ginger o Soda, limón. Decorado con una bola de helado de vainilla.</p>
+                                        <div class="text-end">
+                                            <span class=""><strong>$33.500</strong></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h6><strong>BALI MOON</strong></h6>
+                                        <p class="m-0">Refrescante mezcla de jugo de naranja, crema de coco, durazno. Decorado con una bola de helado de vainilla.</p>
+                                        <div class="text-end">
+                                            <span class=""><strong>$33.500</strong></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h6><strong>PASSION FRUIT</strong></h6>
+                                        <p class="m-0">Exótica bebida de maracuyá, jugo de naranja y crema de coco.</p>
+                                        <div class="text-end">
+                                            <span class=""><strong>$33.500</strong></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h6><strong>BULAN PURNAMA</strong></h6>
+                                        <p class="m-0">Exótica mezcla de lychess y jengibre, crema de coco, Ginger o Soda, zumo de limón.</p>
+                                        <div class="text-end">
+                                            <span class=""><strong>$33.500</strong></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h6><strong>Lassi</strong></h6>
+                                        <p class="m-0">Desc</p>
+                                        <div class="text-end">
+                                            <span class=""><strong>$33.500</strong></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--   ======   CÓCTELES TRADICIONALES   ======   -->
+                                <div class="divColorMenu">
+                                    <div class="RegionsTitle row">
+                                        <h5>CÓCTELES TRADICIONALES</h5>
+                                    </div>
+                                    <div>
+                                        <h6><strong>Tit</strong></h6>
+                                        <p class="m-0">Desc</p>
+                                        <div class="text-end">
+                                            <span class=""><strong>$33.500</strong></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
+
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingTwo">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -167,75 +355,75 @@
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                         Aqui seria similar al de postres (ya casi terminado) la idea es colocar un botón donde levante un modal (es una ventanita sobre la misma vista con una x para cerrar), donde se muestre la foto y algunos detalles adicionales.
-                     </div>
-                 </div>
-             </div>
-             <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Platos fuertes
-                    </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                    <div class="accordion-body fuuu">
-                        <div class="row fuer">
-                            <!--   =====================================================   MEDIO ORIENTE   ===========================================================   -->
-                            <div class="divColorMenu">
-                                <div class="RegionsTitle row">
-                                    <h5>MEDIO ORIENTE</h5>
-                                </div>
-                                <div>
-                                    <h6><strong>PLATO ÁRABE</strong></h6>
-                                    <p class="m-0">Kabab Kafta, Kibbe, Falafel, Pan Arabe, Indios, Arroz Almendrado, Tabule, Labneh, Tahine de Garbanzo y Tahihine de Berenjena.</p>
-                                    <div class="text-end">
-                                        <span class=""><strong>$36.500</strong></span>
-                                    </div>
-                                </div>
+                            Aqui seria similar al de postres (ya casi terminado) la idea es colocar un botón donde levante un modal (es una ventanita sobre la misma vista con una x para cerrar), donde se muestre la foto y algunos detalles adicionales.
+                        </div>
+                    </div>
+                </div>
 
-                                <div>
-                                    <h6><strong>MAZZA</strong></h6>
-                                    <span>Ideal para 2 personas</strong></span>
-                                    <p class="m-0">Trozos de Pollo y Lomo, Kibbe, Falafels, Indios, Pan Árabe, Tabule, Labneh, Tahine de Garbanzo y Tahine de Berenjena.</p>
-                                    <div class="text-end">
-                                        <span class=""><strong>$62.500</strong></span>
-                                    </div>
-                                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Platos fuertes
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body fuuu">
+                            <div class="row fuer">
 
-                                <div>
-                                    <h6><strong>SHAWARMA DE POLLO</strong></h6>
-                                    
-                                    <p class="m-0">Wrap árabe relleno de pollo con vegetales, acompañado de tahine de garbanzo y batata harra.</p>
-                                    <div class="text-end">
-                                        <span class=""><strong>$29.500</strong></span>
+                                <!--   =====================================================   MEDIO ORIENTE    ===========================================================   -->
+                                <div class="divColorMenu">
+                                    <div class="RegionsTitle row">
+                                        <h5>MEDIO ORIENTE</h5>
                                     </div>
-                                </div>
+                                    <div>
+                                        <h6><strong>PLATO ÁRABE</strong></h6>
+                                        <p class="m-0">Kabab Kafta, Kibbe, Falafel, Pan Arabe, Indios, Arroz Almendrado, Tabule, Labneh, Tahine de Garbanzo y Tahihine de Berenjena.</p>
+                                        <div class="text-end">
+                                            <span class=""><strong>$36.500</strong></span>
+                                        </div>
+                                    </div>
 
-                                <div>
-                                    <h6><strong>SHAWARMA DE LOMO O MIXTO</strong></h6>
-                                    <p class="m-0">Wrap árabe relleno de lomo o mixto (pollo y res) con vegetales, acompañado de tahine de garbanzo y batata harra.</p>
-                                    <div class="text-end">
-                                        <span class=""><strong>$31.500</strong></span>
+                                    <div>
+                                        <h6><strong>MAZZA</strong></h6>
+                                        <span>Ideal para 2 personas</strong></span>
+                                        <p class="m-0">Trozos de Pollo y Lomo, Kibbe, Falafels, Indios, Pan Árabe, Tabule, Labneh, Tahine de Garbanzo y Tahine de Berenjena.</p>
+                                        <div class="text-end">
+                                            <span class=""><strong>$62.500</strong></span>
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div>
-                                    <h6><strong>CORDERO MAGREBI</strong></h6>
-                                    <p class="m-0">Carné de Cordero en salsa de anís estrellado, acompañadocon pure de papa y tabule.</p>
-                                    <div class="text-end">
-                                        <span class=""><strong>$48.500</strong></span>
+                                    <div>
+                                        <h6><strong>SHAWARMA DE POLLO</strong></h6>
+                                        <p class="m-0">Wrap árabe relleno de pollo con vegetales, acompañado de tahine de garbanzo y batata harra.</p>
+                                        <div class="text-end">
+                                            <span class=""><strong>$30.500</strong></span>
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div>
-                                    <h6><strong>CORDERO MARROQUI</strong></h6>
-                                    <p class="m-0">Finos cortes de lomo de cordero marinados en especias y frutos secos (Almendras y uvas pasas). Acompañado de arroz basmati.</p>
-                                    <div class="text-end">
-                                        <span class=""><strong>$36.500</strong></span>
+                                    <div>
+                                        <h6><strong>SHAWARMA DE LOMO O MIXTO</strong></h6>
+                                        <p class="m-0">Wrap árabe relleno de lomo o mixto (pollo y res) con vegetales, acompañado de tahine de garbanzo y batata harra.</p>
+                                        <div class="text-end">
+                                            <span class=""><strong>$32.500</strong></span>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h6><strong>CORDERO MAGREBI</strong></h6>
+                                        <p class="m-0">Carné de Cordero en salsa de anís estrellado, acompañadocon pure de papa y tabule.</p>
+                                        <div class="text-end">
+                                            <span class=""><strong>$48.500</strong></span>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h6><strong>CORDERO MARROQUI</strong></h6>
+                                        <p class="m-0">Finos cortes de lomo de cordero marinados en especias y frutos secos (Almendras y uvas pasas). Acompañado de arroz basmati.</p>
+                                        <div class="text-end">
+                                            <span class=""><strong>$39.500</strong></span>
+                                        </div>
                                     </div>
                                 </div>
-                                </div>
-                            <div>
 
                                 <!--   =====================================================   INDONESIA   ===========================================================   -->
                                 <div class="divColorMenu">
@@ -247,7 +435,7 @@
                                         <h6><strong>NASI GORENG</strong></h6>
                                         <p class="m-0">Arroz frito al wok, es un plato tradicional de la cocina Indonesa, con pollo, vegetales, camarones y langostinos tempurizados.</p>
                                         <div class="text-end">
-                                            <span class=""><strong>$39.500</strong></span>
+                                            <span class=""><strong>$41.500</strong></span>
                                         </div>
                                     </div>
 
@@ -255,14 +443,15 @@
                                         <h6><strong>POLLO PADANG</strong></h6>
                                         <p class="m-0">Trozos de pollo en una salsa a base de leche de coco y curry amarillo. Acompañado de arroz blanco.</p>
                                         <div class="text-end">
-                                            <span class=""><strong>$36.500</strong></span>
+                                            <span class=""><strong>$39.500</strong></span>
                                         </div>
                                     </div>
+
                                     <div>
                                         <h6><strong>UDANG SAMBAL IKAN</strong></h6>
                                         <p class="m-0">Mezcla de camarones tigre y trozos de pescado salteados con vegetales en la tradicional salsa Sambal ligeramente picante.</p>
                                         <div class="text-end">
-                                            <span class=""><strong>$47.500</strong></span>
+                                            <span class=""><strong>$48.500</strong></span>
                                         </div>
                                     </div>
                                 </div>
@@ -272,196 +461,343 @@
                                     <div class="RegionsTitle row">
                                         <h5>INDIA</h5>
                                     </div>
+
                                     <div>
-
-                                        <h6><strong></strong></h6>
-                                        <p class="m-0"></p>
+                                        <h6><strong>MUTTON TIKKA MASALA</strong></h6>
+                                        <p class="m-0">Trozos de cordero marinados y preparados en Garam Masala.</p>
                                         <div class="text-end">
-                                         <span class=""><strong></strong></span>
-                                     </div>
-                                 </div>
-                             </div>
+                                            <span class=""><strong>$42.500</strong></span>
+                                        </div>
+                                    </div>
 
-                             <!--   =====================================================   CHINA   ===========================================================   -->
-                             <div class="divColorMenu">
-                                <div class="RegionsTitle row">
-                                    <h5>CHINA</h5>
+                                    <div>
+                                        <h6><strong>CHICKEN TIKKA MASALA</strong></h6>
+                                        <p class="m-0">Trozos de pollo marinados y preparados en Garam Masala.</p>
+                                        <div class="text-end">
+                                            <span class=""><strong>$40.500</strong></span>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h6><strong>VEGETABLES TIKKA MASALA</strong></h6>
+                                        <p class="m-0">Trozos de verdura elaboradas en Garam Masala.</p>
+                                        <div class="text-end">
+                                            <span class=""><strong>$29.500</strong></span>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h6><strong>DAAL</strong></h6>
+                                        <p class="m-0">Termino sánscrito que denomina uno de los platos mñas populares de la India: "Lentejas Pardas" Acompañado de Raita.</p>
+                                        <div class="text-end">
+                                            <span class=""><strong>$23.500</strong></span>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h6><strong>RAITA</strong></h6>
+                                        <p class="m-0">Mezcla de yogurth natural con pepino y especias de la India.</p>
+                                        <div class="text-end">
+                                            <span class=""><strong>$8.500</strong></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <h6><strong>ARROZ BASMATI</strong></h6>
+                                            <p class="m-0">Tradicional arroz de la India.</p>
+                                            <div class="text-end">
+                                                <span class=""><strong>$9.500</strong></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <h6><strong>PAN PARATHA</strong></h6>
+                                            <p class="m-0">Clásico pan hindú.</p>
+                                            <div class="text-end">
+                                                <span class=""><strong>$7.500</strong></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
                                 </div>
 
-                                <div>
-                                 <h6><strong></strong></h6>
-                                 <p class="m-0"></p>
-                                 <div class="text-end">
-                                     <span class=""><strong></strong></span>
-                                 </div>
-                             </div>
-                         </div>
+                                <!--   =====================================================   CHINA   ===========================================================   -->
+                                <div class="divColorMenu">
+                                    <div class="RegionsTitle row">
+                                        <h5>CHINA</h5>
+                                    </div>
 
-                         <!--   =====================================================   THAILANDIA   ===========================================================   -->
-                         <div class="divColorMenu">
-                            <div class="RegionsTitle row">
-                                <h5>THAILANDIA</h5>
+                                    <div>
+                                        <h6><strong>CERDO AGRIDULCE CANTONES</strong></h6>
+                                        <p class="m-0">Trozos de cerdo rebozados con vegetales salteados. En salsa agridulce acompañados de arroz, puré o ensalada de la casa.</p>
+                                        <div class="text-end">
+                                            <span class=""><strong>$39.500</strong></span>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h6><strong>LOMO CHIFA</strong></h6>
+                                        <p class="m-0">Julianas de lomo de res salteadas con vegetales y maíz tierno, en salsa típica Chifa. Acompañado de arroz, puré o ensalada de la casa.</p>
+                                        <div class="text-end">
+                                            <span class=""><strong>$38.500</strong></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--   =====================================================   THAILANDIA   ===========================================================   -->
+                                <div class="divColorMenu">
+                                    <div class="RegionsTitle row">
+                                        <h5>THAILANDIA</h5>
+                                    </div>
+
+                                    <div>
+                                        <h6><strong>KAM KIO GUAN</strong></h6>
+                                        <p class="m-0">Trozos de pollo y vegetales salteados en leche de coco, curry rojo y verde. Acompañado de arroz, puré o ensalada de la casa.</p>
+                                        <div class="text-end">
+                                            <span class=""><strong>$39.500</strong></span>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h6><strong>SHU SHI KU</strong></h6>
+                                        <p class="m-0">Mezcla de langostinos, pescado, vegetales aromatizados y salteados en leche de coco, curry rojo y verde. Acompañado de arroz, puré o ensalada de la casa.</p>
+                                        <div class="text-end">
+                                            <span class=""><strong>$49.500</strong></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--   =====================================================   FUSIÓN DE AROMAS   ===========================================================   -->
+                                <div class="divColorMenu">
+                                    <div class="RegionsTitle row">
+                                        <h5>FUSIÓN DE AROMAS</h5>
+                                    </div>
+
+                                    <div>
+                                        <h6><strong>ASIA FUSIÓN</strong></h6>
+                                        <p class="m-0">Saborea una ideal mezcla asiatica compuesta de 2 samosas vegetarianas, 2 falafel, 2 kibbes. 2 spring rolls, 2 pinchos de cerdo en salsa teriyaki y tempuras de pollo picante.</p>
+                                        <div class="text-end">
+                                            <span class=""><strong>$53.500</strong></span>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h6><strong>LANGOSTINOS THAU</strong></h6>
+                                        <p class="m-0">Langostinos sobre una base de pure de papa, bañados en salsa Thai, ligeramente picante.</p>
+                                        <div class="text-end">
+                                            <span class=""><strong>$48.500</strong></span>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h6><strong>RAMEN</strong></h6>
+                                        <p class="m-0">Sopa tradicional japonesa elaborada con fideos, pollo, vegetales, palmito de bambú, aceite de ajonjolí y huevo.</p>
+                                        <div class="text-end">
+                                            <span class=""><strong>$27.500</strong></span>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h6><strong>BROCHETAS KU</strong></h6>
+                                        <p class="m-0">Langostinos y salmón en salsa de mostaza Dijon y mejillones. Acompañado con puré de papa.</p>
+                                        <div class="text-end">
+                                            <span class=""><strong>$49.500</strong></span>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h6><strong>SALMÓN FUSIÓN</strong></h6>
+                                        <p class="m-0">Filete de salmón en salsa de maracuyá. Acompañado con puré de papa y ensalada de la casa.</p>
+                                        <div class="text-end">
+                                            <span class=""><strong>$46.500</strong></span>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h6><strong>PICADA MIXTA</strong></h6>
+                                        <p class="m-0">Ideal para 2 personas</p>
+                                        <p class="m-0">Lomo de res, pollo, chorizo, costillas de cerdo, papa criolla, batata harra y yuca. Acompañado de tahine de garbanzo.</p>
+                                        <div class="text-end">
+                                            <span class=""><strong>$49.500</strong></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--   =====================================================   OPCIÓN VEGETARIANA   ===========================================================   -->
+                                <div class="divColorMenu">
+                                    <div class="RegionsTitle row">
+                                        <h5>OPCIÓN VEGETARIANA</h5>
+                                    </div>
+                                    
+                                    <div>
+                                        <h6><strong>SHAWARMA VEGETARIANO</strong></h6>
+                                        <p class="m-0">Wrap árabe relleno de champiñones y vegetales salteados. Acompañado de tahine de garbanzo falafel y batata harra.</p>
+                                        <div class="text-end">
+                                            <span class=""><strong>$28.500</strong></span>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h6><strong>ARROZ BENGALÍ</strong></h6>
+                                        <p class="m-0">Este plato originario del sur de la India, mezcla arroz basmati, garam masala, vegetales y frutos secos (Marañón, albaricoque, uvas pasas). El cual va acompañado de pacoras con chutney de frutas.</p>
+                                        <div class="text-end">
+                                            <span class=""><strong>$29.500</strong></span>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h6><strong>PLATO VEGETARIANO</strong></h6>
+                                        <p class="m-0">Falafel, arroz blanco con almendras, tahine de garbanzo, vegetales salteados y pan arabe.</p>
+                                        <div class="text-end">
+                                            <span class=""><strong>$28.000</strong></span>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h6><strong>CEVICHE TALAI</strong></h6>
+                                        <p class="m-0">En una base citrica. Combinación de champiñón, mango, cebolla y cilantro.</p>
+                                        <div class="text-end">
+                                            <span class=""><strong>$22.500</strong></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--   =====================================================   MENÚ INFANTIL   ===========================================================   -->
+                                <div class="divColorMenu">
+                                    <div class="RegionsTitle row">
+                                        <h5>MENÚ INFANTIL</h5>
+                                    </div>
+
+                                    <div>
+                                        <h6><strong>BROCHETAS DE POLLO</strong></h6>
+                                        <p class="m-0">Con salchichs y nuggets. Acompañado de papa francesa y jugo natural en agua o leche.</p>
+                                        <div class="text-end">
+                                            <span class=""><strong>$19.500</strong></span>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h6><strong>MUSLITOS DE ALAS</strong></h6>
+                                        <p class="m-0">Acompañadas de papa francesa y jugo natural en agua o leche.</p>
+                                        <div class="text-end">
+                                            <span class=""><strong>$19.500</strong></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--
+                                <div>
+                                    <h6><strong></strong></h6>
+                                    <p class="m-0"></p>
+                                    <div class="text-end">
+                                        <span class=""><strong></strong></span>
+                                    </div>
+                                </div>
+                            -->
+                        </div>
+                    </div>       
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Postres
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body col-12 desserts">
+                        <div class="row" >
+                            <div class="col-6 mb-2">
+                                <div class="border col-12 h-100">
+                                    <div class="col">
+                                        <h6 class="text-center"><strong>SRING ROLLS DULCES</strong></h6>
+                                    </div>
+                                    <div class="minh-100">
+                                        <p class="small">Rollitos rellenos de manzana con helado de vainilla.</p>
+                                    </div>
+                                    <div class="text-end">
+                                        <h6>$13.500</h6>
+                                    </div>
+                                </div>
+                            </div> 
+
+                            <div class="col-6 mb-2">
+                                <div class="border col-12 h-100">
+                                    <div class="col">
+                                        <h6 class="text-center"><strong>BANANAS TEMPURA</strong></h6>
+                                    </div>  
+                                    <div class="minh-100">
+                                        <p class="small">Bananitos rebosados, acompañados de helado de vainilla y salsa de chocolate.</p>
+                                    </div>
+                                    <div class="text-end">
+                                        <h6>$13.500</h6>
+                                    </div>
+                                </div> 
                             </div>
 
-                            <div>
-                             <h6><strong></strong></h6>
-                             <p class="m-0"></p>
-                             <div class="text-end">
-                                 <span class=""><strong></strong></span>
-                             </div>
-                         </div>
-                     </div>
+                            <div class="col-6 mb-2">
+                                <div class="border col-12 h-100">
+                                    <div class="col">
+                                        <h6 class="text-center"><strong>LYCHEE PASSION</strong></h6>
+                                    </div>
+                                    <div class="minh-100">
+                                        <p class="small">Copa de helado de maracuyá y lychees.</p>
+                                    </div>
+                                    <div class="text-end">
+                                        <h6>$14.500</h6>
+                                    </div>
+                                </div> 
+                            </div>
 
-                     <!--   =====================================================   FUSIÓN DE AROMAS   ===========================================================   -->
-                     <<div class="divColorMenu">
-                        <div class="RegionsTitle row">
-                            <h5>FUSIÓN DE AROMAS</h5>
-                        </div>
-
-                        <div>
-                         <h6><strong></strong></h6>
-                         <p class="m-0"></p>
-                         <div class="text-end">
-                             <span class=""><strong></strong></span>
-                         </div>
-                     </div>
-                 </div>
-
-                 <!--   =====================================================   OPCIÓN VEGETARIANA   ===========================================================   -->
-                 <div class="divColorMenu">
-                    <div class="RegionsTitle row">
-                        <h5>OPCIÓN VEGETARIANA</h5>
-                    </div>
-
-                    <div>
-                     <h6><strong></strong></h6>
-                     <p class="m-0"></p>
-                     <div class="text-end">
-                         <span class=""><strong></strong></span>
-                     </div>
-                 </div>
-             </div>
-
-
-                       <!--
-                       <div>
-                           <h6><strong></strong></h6>
-                           <p class="m-0"></p>
-                           <div class="text-end">
-                               <span class=""><strong></strong></span>
-                           </div>
-                       </div>
-                   -->
-               </div>
-           </div>
-       </div>
-   </div>
-   <div class="accordion-item">
-    <h2 class="accordion-header" id="headingFour">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-            Postres
-        </button>
-    </h2>
-    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-        <div class="accordion-body col-12 desserts">
-            <div class="row" >
-
-
-                <div class="col-6 mb-2">
-                    <div class="border col-12 h-100">
-                        <div class="col">
-                            <h6 class="text-center"><strong>SRING ROLLS DULCES</strong></h6>
-                        </div>
-                        <div class="minh-100">
-                            <p class="small">Rollitos rellenos de manzana con helado de vainilla.</p>
-                        </div>
-                        <div class="text-end">
-                            <h6>$13.500</h6>
+                            <div class="col-6 mb-2">
+                                <div class="border col-12 h-100">
+                                    <div class="col">
+                                        <h6 class="text-center"><strong>OPCIÓN DEL CHEFF</strong></h6>
+                                    </div>
+                                    <div class="minh-100">
+                                        <p class="small">Pregunte por la opción del día.</p>
+                                    </div>
+                                    <div class="text-end">
+                                        <h6>$14.500</h6>
+                                    </div>
+                                </div> 
+                            </div>
                         </div>
                     </div>
-                </div> 
-
-                <div class="col-6 mb-2">
-                    <div class="border col-12 h-100">
-                        <div class="col">
-                            <h6 class="text-center"><strong>BANANAS TEMPURA</strong></h6>
-                        </div>
-                        <div class="minh-100">
-                            <p class="small">Bananitos rebosados, acompañados de helado de vainilla y salsa de chocolate.</p>
-                        </div>
-                        <div class="text-end">
-                            <h6>$13.500</h6>
-                        </div>
-                    </div> 
                 </div>
+            </div>
 
-                <div class="col-6 mb-2">
-                    <div class="border col-12 h-100">
-                        <div class="col">
-                            <h6 class="text-center"><strong>LYCHEE PASSION</strong></h6>
-                        </div>
-                        <div class="minh-100">
-                            <p class="small">Copa de helado de maracuyá y lychees.</p>
-                        </div>
-                        <div class="text-end">
-                            <h6>$14.500</h6>
-                        </div>
-                    </div> 
-                </div>
-
-                <div class="col-6 mb-2">
-                    <div class="border col-12 h-100">
-                        <div class="col">
-                            <h6 class="text-center"><strong>OPCIÓN DEL CHEFF</strong></h6>
-                        </div>
-                        <div class="minh-100">
-                            <p class="small">Pregunte por la opción del día.</p>
-                        </div>
-                        <div class="text-end">
-                            <h6>$14.500</h6>
-                        </div>
-                    </div> 
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Otros
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        en esta opción va las pipas, paquetes, adiciones y lo que se quiera colocar :p
+                    </div>
                 </div>
             </div>
         </div>
+    </div> 
+</div>
+</div>
+<div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <img src="https://raw.githubusercontent.com/bmao92/borrador-kathmandu/main/93bda0ad-11b5-4b41-b5c8-8b58260da6d2.jpg">
+            <button id="btnCloseModal" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X
+            </button>
+        </div>
     </div>
-
-</div>
-<div class="accordion-item">
-    <h2 class="accordion-header" id="headingFive">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-            Otros
-        </button>
-    </h2>
-    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-           en esta opción va las pipas, paquetes, adiciones y lo que se quiera colocar :p
-       </div>
-   </div>
-</div>
-</div>
-</div>
-</div>
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <img src="https://raw.githubusercontent.com/bmao92/borrador-kathmandu/main/93bda0ad-11b5-4b41-b5c8-8b58260da6d2.jpg">
-      <button id="btnCloseModal" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X
-      </button>
-  </div>
-</div>
-</div>
-
-</div>
-</div>
-</div>
 </div>
 </body>
 </html>
 
 <script type="text/javascript">
     $( document ).ready(function() {
-     $("#exampleModalCenter").modal("toggle")
- });
+       // $("#eventModal").modal("toggle")
+   });
 
 </script>
