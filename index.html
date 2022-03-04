@@ -132,11 +132,11 @@
         }
 
         .divCircle img{
-           padding: 15px;
-           width: inherit;
-       }
+         padding: 15px;
+         width: inherit;
+     }
 
-       .fuer > .col-4{
+     .fuer > .col-4{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -144,102 +144,135 @@
         margin: 5px 0;
     }
 
-    .fuer{
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        align-items: flex-start;
+    .accordion-button:not(.collapsed) {
+        color: black!important;
+        box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
     }
 
-    .fuuu{
-        background: #fff8f8c2 url("https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/3164779/mandala-clipart-md.png") repeat center top;
-        background-size: 77px;
-        background-position-x: center;
-        background-position-y: center;
-        background-blend-mode: screen;
+    .accordion-button:not(.collapsed)::after {
+        /* background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e); */
+        background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e)!important;
+        transform: rotate(-180deg);
     }
 
-    .btn-close{
-        font-size: 35px;
-        position: absolute;
-        background: #f9eef6;
-        color: black;
-        font-weight: 700;
+    .accordion-button {
+        position: relative;
         display: flex;
-        flex-wrap: nowrap;
-        top: -10px;
-        align-content: center;
-        justify-content: center;
         align-items: center;
-        padding: 2px;
-        right: 0;
-    }
-
-    .RegionsTitle{
-        padding: 5px 5px 1px;
-        margin-bottom: 10px;
-        color: white;
-        text-align: center;
-        background: rgb(136,19,29);
-        background: linear-gradient(90deg, rgba(136,19,29,1) 0%, rgba(205,40,28,1) 25%, rgba(136,19,29,1) 50%, rgba(205,40,28,1) 75%, rgba(136,19,29,1) 100%);
+        width: 100%;
+        padding: 1rem 1.25rem;
+        font-size: 17px;
+        color: #212529;
+        text-align: left;
+        background-color: #efa12d;
+        border: 0;
+        border-radius: 0;
+        overflow-anchor: none;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,border-radius .15s ease;
+        background: rgb(255,201,125);
+        background: linear-gradient(94deg, rgba(255,201,125,1) 14%, rgba(209,145,57,1) 53%, rgba(212,110,59,1) 93%);
+        font-weight: 700;
         font-family: 'Quintessential', cursive;
-    }
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        .fuer{
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            align-items: flex-start;
+        }
 
-    .divColorMenu{
-        background: rgb(246,223,205);
-        background: linear-gradient(90deg, rgba(246,223,205,1) 0%, rgba(243,227,211,1) 50%, rgba(249,232,204,1) 100%);
-        margin-bottom: 20px;
-    }
-    .divColorMenu > div:nth-child(2) {
-        margin-top: 0px!important;
-        border-top: none!important;
-        padding-top: 0px!important;
-    }
-    .divColorMenu > div:first-child {
-        margin-top: 0px!important;
-        border-top: none!important;
-        padding-top: 5px!important;
-    }
-    .divColorMenu > div {
-        margin-top: 10px;
-        border-top: 1px solid #d7c5b3;
-        padding-top: 10px;
-    }
+        .fuuu{
+            background: #fff8f8c2 url("https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/3164779/mandala-clipart-md.png") repeat center top;
+            background-size: 77px;
+            background-position-x: center;
+            background-position-y: center;
+            background-blend-mode: screen;
+        }
 
-    .ir-arriba {
-        display:none;
-        padding:20px;
-        background:#024959;
-        font-size:20px;
-        color:#fff;
-        cursor:pointer;
-        position: fixed;
-        bottom:20px;
-        right:20px;
-    }
+        .btn-close{
+            font-size: 35px;
+            position: absolute;
+            background: #f9eef6;
+            color: black;
+            font-weight: 700;
+            display: flex;
+            flex-wrap: nowrap;
+            top: -10px;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            padding: 2px;
+            right: 0;
+        }
 
-    #myBtn {
-      display: none;
-      position: fixed;
-      bottom: 20px;
-      right: 10px;
-      z-index: 99;
-      font-size: 18px;
-      border: none;
-      outline: none;
-      background-color: #b33131;
-      color: white;
-      cursor: pointer;
-      padding: 5px 15px;
-      border-radius: 8px;
-      box-shadow: 0px 0px 5px 0px #0c0c0c;
-  }
+        .RegionsTitle{
+            padding: 5px 5px 1px;
+            margin-bottom: 10px;
+            color: white;
+            text-align: center;
+            background: rgb(136,19,29);
+            background: linear-gradient(90deg, rgba(136,19,29,1) 0%, rgba(205,40,28,1) 25%, rgba(136,19,29,1) 50%, rgba(205,40,28,1) 75%, rgba(136,19,29,1) 100%);
+            font-family: 'Quintessential', cursive;
+        }
 
-  #myBtn:hover {
-      background-color: #555;
-  }
+        .divColorMenu{
+            background: rgb(246,223,205);
+            background: linear-gradient(90deg, rgba(246,223,205,1) 0%, rgba(243,227,211,1) 50%, rgba(249,232,204,1) 100%);
+            margin-bottom: 20px;
+        }
+        .divColorMenu > div:nth-child(2) {
+            margin-top: 0px!important;
+            border-top: none!important;
+            padding-top: 0px!important;
+        }
+        .divColorMenu > div:first-child {
+            margin-top: 0px!important;
+            border-top: none!important;
+            padding-top: 5px!important;
+        }
+        .divColorMenu > div {
+            margin-top: 10px;
+            border-top: 1px solid #d7c5b3;
+            padding-top: 10px;
+        }
 
-</style>
+        .ir-arriba {
+            display:none;
+            padding:20px;
+            background:#024959;
+            font-size:20px;
+            color:#fff;
+            cursor:pointer;
+            position: fixed;
+            bottom:20px;
+            right:20px;
+        }
+
+        #myBtn {
+          display: none;
+          position: fixed;
+          bottom: 20px;
+          right: 10px;
+          z-index: 99;
+          font-size: 18px;
+          border: none;
+          outline: none;
+          background-color: #b33131;
+          color: white;
+          cursor: pointer;
+          padding: 5px 15px;
+          border-radius: 8px;
+          box-shadow: 0px 0px 5px 0px #0c0c0c;
+      }
+
+      #myBtn:hover {
+          background-color: #555;
+      }
+
+  </style>
 </head>
 <body>
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up-to-line"></i></button>
