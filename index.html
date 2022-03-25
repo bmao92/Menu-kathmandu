@@ -1126,7 +1126,7 @@
                                         </div>
 
                                         <div style="display: flex">
-                                            <div id="blocked1" class="border col-6">
+                                            <div class="border col-6">
                                                 <div class="p-3">
                                                     <h6><strong>JUGO EN AGUA</strong></h6>
                                                     <p class="m-0 note1">Maracuyá, Mango, Mora, Piña y Durazno.</p>
@@ -1137,7 +1137,7 @@
                                                 </div>
                                             </div>
 
-                                            <div id="blocked2" class="border col-6">
+                                            <div class="border col-6">
                                                 <div class="p-3">
                                                     <h6><strong>JUGO EN LECHE</strong></h6>
                                                     <p class="m-0 note1">Maracuyá, Mango, Mora, Piña y Durazno.</p>
@@ -1150,7 +1150,7 @@
                                         </div>
 
                                         <div style="display: flex">
-                                            <div class="border col-6">
+                                            <div id="blocked1" class="border col-6">
                                                 <div class="p-3">
                                                     <h6><strong>LIMONADA</strong></h6>
                                                     <p class="m-0 note1"></p>
@@ -1161,7 +1161,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="border col-6">
+                                            <div  id="blocked2" class="border col-6">
                                                 <div class="p-3">
                                                     <h6><strong>LIMONADA CEREZADA</strong></h6>
                                                     <p class="m-0 note1"></p>
@@ -1174,7 +1174,7 @@
                                         </div>
 
                                         <div style="display: flex">
-                                            <div class="border col-6">
+                                            <div id="blocked3" class="border col-6">
                                                 <div class="p-3">
                                                     <h6><strong>LIMONADA HIERBABUENA</strong></h6>
                                                     <p class="m-0 note1"></p>
@@ -2136,6 +2136,8 @@
             if (a.toLocaleDateString('en-EN', options) === 'Thursday' || a.toLocaleDateString('en-EN', options) === 'Friday' | a.toLocaleDateString('en-EN', options) === 'Saturday') {
                 $("#blocked1").addClass("bg-no text-muted");
                 $("#blocked2").addClass("bg-no text-muted");
+                $("#blocked3").addClass("bg-no text-muted");
+                $("#blocked4").addClass("bg-no text-muted");
             };
         };
     });
