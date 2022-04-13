@@ -1878,7 +1878,7 @@
                             </div>
                         </div>
 
-                        <div>
+                        <div class="bg-no text-muted">
                             <h6><strong>CORDERO MAGREBI</strong></h6>
                             <p class="m-0 note1">Rack de Cordero en salsa de anís estrellado, acompañado con pure de papa y tabule. Elegir termino de la preparación.</p>
                             <div class="text-end">
@@ -1981,7 +1981,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-6">
+                            <div class="col-6 bg-no text-muted">
                                 <h6><strong>PAN PARATHA</strong></h6>
                                 <p class="m-0 note1">Clásico pan hindú.</p>
                                 <div class="text-end">
@@ -2256,7 +2256,7 @@
         var a = new Date();
         // alert(weekday[a.getDay()]);
         if (dt.getHours() >= 19) {
-            if (a.toLocaleDateString('en-EN', options) === 'Thursday' || a.toLocaleDateString('en-EN', options) === 'Friday' | a.toLocaleDateString('en-EN', options) === 'Saturday') {
+            if (a.toLocaleDateString('en-EN', options) === 'Thursday' || a.toLocaleDateString('en-EN', options) === 'Wednesday' | a.toLocaleDateString('en-EN', options) === 'Saturday') {
                 $("#blocked1").addClass("bg-no text-muted");
                 $("#blocked2").addClass("bg-no text-muted");
                 $("#blocked3").addClass("bg-no text-muted");
