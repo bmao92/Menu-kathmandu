@@ -1250,7 +1250,7 @@
                                         </div>
 
                                         <div style="display: flex">
-                                            <div class="border col-6">
+                                            <div id="blocked5" class="border col-6">
                                                 <div class="p-3">
                                                     <h6><strong>JUGO EN AGUA</strong></h6>
                                                     <p class="m-0 note1">Maracuyá, Mango, Mora, Piña y Durazno.</p>
@@ -1261,7 +1261,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="border col-6">
+                                            <div id="blocked6" class="border col-6">
                                                 <div class="p-3">
                                                     <h6><strong>JUGO EN LECHE</strong></h6>
                                                     <p class="m-0 note1">Maracuyá, Mango, Mora, Piña y Durazno.</p>
@@ -2306,12 +2306,17 @@
                         $("#blocked2").addClass("bg-no text-muted");
                         $("#blocked3").addClass("bg-no text-muted");
                         $("#blocked4").addClass("bg-no text-muted");
+                        $("#blocked5").addClass("bg-no text-muted");
+                        $("#blocked6").addClass("bg-no text-muted");
                     };
               } else if (a.toLocaleDateString('en-EN', options) === 'Sunday' ) {
                         $("#blocked1").addClass("bg-no text-muted");
                         $("#blocked2").addClass("bg-no text-muted");
                         $("#blocked3").addClass("bg-no text-muted");
                         $("#blocked4").addClass("bg-no text-muted");
+                        $("#blocked5").addClass("bg-no text-muted");
+                        $("#blocked6").addClass("bg-no text-muted");
+
                     };
             
         });
