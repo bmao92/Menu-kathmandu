@@ -2300,7 +2300,7 @@
             var options = { weekday: 'long' };
             var a = new Date();
             // alert(weekday[a.getDay()]);
-             if (a.toLocaleDateString('en-EN', options) === 'Wednesday' || ('en-EN', options) === 'Thursday' || a.toLocaleDateString('en-EN', options) === 'Friday' | a.toLocaleDateString('en-EN', options) === 'Saturday') {
+             if (a.toLocaleDateString('en-EN', options) === 'Wednesday' || ('en-EN', options) === 'Thursday' || a.toLocaleDateString('en-EN', options) === 'Friday') {
                     if (dt.getHours() >= 19) {
                         $("#blocked1").addClass("bg-no text-muted");
                         $("#blocked2").addClass("bg-no text-muted");
@@ -2309,13 +2309,11 @@
                         $("#blocked5").addClass("bg-no text-muted");
                         $("#blocked6").addClass("bg-no text-muted");
                     };
-              } else if (a.toLocaleDateString('en-EN', options) === 'Sunday' ) {
+              } else if (a.toLocaleDateString('en-EN', options) === 'Sunday' || a.toLocaleDateString('en-EN', options) === 'Saturday') {
                         $("#blocked1").addClass("bg-no text-muted");
                         $("#blocked2").addClass("bg-no text-muted");
                         $("#blocked3").addClass("bg-no text-muted");
                         $("#blocked4").addClass("bg-no text-muted");
-                        $("#blocked5").addClass("bg-no text-muted");
-                        $("#blocked6").addClass("bg-no text-muted");
 
                     };
             
