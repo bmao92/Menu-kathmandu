@@ -2299,9 +2299,11 @@
             var weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
             var options = { weekday: 'long' };
             var a = new Date();
+            var dat = a.toLocaleDateString('en-EN', options);
             // alert(weekday[a.getDay()]);
-             if (a.toLocaleDateString('en-EN', options) === 'Wednesday' || ('en-EN', options) === 'Thursday' || a.toLocaleDateString('en-EN', options) === 'Friday') {
-                    if (dt.getHours() >= 19) {
+            debugger;
+             if (dat === 'Wednesday' || dat === 'Thursday' || dat === 'Friday') {
+                    if (dt.getHours() >= 18) {
                         $("#blocked1").addClass("bg-no text-muted");
                         $("#blocked2").addClass("bg-no text-muted");
                         $("#blocked3").addClass("bg-no text-muted");
@@ -2309,7 +2311,7 @@
                         $("#blocked5").addClass("bg-no text-muted");
                         $("#blocked6").addClass("bg-no text-muted");
                     };
-              } else if (a.toLocaleDateString('en-EN', options) === 'Sunday' || a.toLocaleDateString('en-EN', options) === 'Saturday') {
+              } else if (dat === 'Sunday' || dat === 'Saturday') {
                         $("#blocked1").addClass("bg-no text-muted");
                         $("#blocked2").addClass("bg-no text-muted");
                         //$("#blocked3").addClass("bg-no text-muted");
