@@ -892,7 +892,7 @@
                                 </div>
 
                                 <!--   ======   BEBIDAS CALIENTES   ======   -->
-                                <div class="accordion-item p-0">
+                                <div id="HotDrinks" class="accordion-item p-0">
                                     <div class="accordion-button collapsed norm" type="button" data-bs-toggle="collapse" data-bs-target="#collapsCoctelseSix" aria-expanded="false" aria-controls="collapsCoctelseSix">
                                         BEBIDAS CALIENTES
                                     </div>
@@ -2295,6 +2295,7 @@
             debugger;
              if (dat === 'Wednesday' || dat === 'Thursday' || dat === 'Friday') {
                     if (dt.getHours() >= 18 || dt.getHours() < 2) {
+                        $("HotDrinks").addClass("d-none");
                         $("#blocked1").addClass("bg-no text-muted");
                         $("#blocked2").addClass("bg-no text-muted");
                         $("#blocked3").addClass("bg-no text-muted");
@@ -2303,6 +2304,9 @@
                         $("#blocked6").addClass("bg-no text-muted");
                     };
               } else if (dat === 'Sunday' || dat === 'Saturday') {
+                if (dt.getHours() >= 16 || dt.getHours() < 2) {
+                        $("HotDrinks").addClass("d-none");
+                    };
                         $("#blocked1").addClass("bg-no text-muted");
                         $("#blocked2").addClass("bg-no text-muted");
                         //$("#blocked3").addClass("bg-no text-muted");
