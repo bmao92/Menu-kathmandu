@@ -2295,7 +2295,7 @@
             debugger;
              if (dat === 'Wednesday' || dat === 'Thursday' || dat === 'Friday') {
                     if (dt.getHours() >= 18 || dt.getHours() < 2) {
-                        $("HotDrinks").addClass("d-none");
+                        $("#HotDrinks").addClass("d-none");
                         $("#blocked1").addClass("bg-no text-muted");
                         $("#blocked2").addClass("bg-no text-muted");
                         $("#blocked3").addClass("bg-no text-muted");
@@ -2305,7 +2305,7 @@
                     };
               } else if (dat === 'Sunday' || dat === 'Saturday') {
                 if (dt.getHours() >= 16 || dt.getHours() < 2) {
-                        $("HotDrinks").addClass("d-none");
+                        $("#HotDrinks").addClass("d-none");
                     };
                         $("#blocked1").addClass("bg-no text-muted");
                         $("#blocked2").addClass("bg-no text-muted");
