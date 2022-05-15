@@ -1347,7 +1347,7 @@
                                         </div>
 
                                         <div style="display: flex">
-                                            <div class="border col-6">
+                                            <div class="border col-6 bg-no text-muted">
                                                 <div class="p-3">
                                                     <h6><strong>TÉ KAPADOKYA</strong></h6>
                                                     <p class="m-0 note1">Refrescante bebida tradional a base de frutos rojos y flor de Jamaica.</p>
@@ -1387,7 +1387,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="border col-6 bg-no text-muted">
+                                            <div class="border col-6">
                                                 <div class="p-3">
                                                     <h6><strong>STELLA ARTOIS</strong></h6>
                                                     <p class="m-0 note1"></p>
@@ -2304,7 +2304,7 @@
                         $("#blocked6").addClass("bg-no text-muted");
                     };
               } else if (dat === 'Sunday' || dat === 'Saturday') {
-                if (dt.getHours() >= 16 || dt.getHours() < 2) {
+                if (dt.getHours() >= 12 || dt.getHours() < 2) {
                         $("#HotDrinks").addClass("d-none");
                     };
                         $("#blocked1").addClass("bg-no text-muted");
