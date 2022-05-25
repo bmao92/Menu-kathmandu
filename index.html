@@ -2298,7 +2298,7 @@
             var dat = a.toLocaleDateString('en-EN', options);
             // alert(weekday[a.getDay()]);
             debugger;
-             if (dat === 'Wednesday' || dat === 'Thursday' || dat === 'Friday') {
+             if (dat === 'Tuesday' ||dat === 'Wednesday' || dat === 'Thursday' || dat === 'Friday') {
                     if (dt.getHours() >= 18 || dt.getHours() < 2) {
                         $("#HotDrinks").addClass("d-none");
                         $("#blocked1").addClass("bg-no text-muted");
