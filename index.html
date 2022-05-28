@@ -33,7 +33,11 @@
                 #collapseOne .a1::after{
                     content: ''!important;
                 }
-        
+                
+                .accordion-button.norm.bg-no.text-muted::after{
+                    display: none;
+                }
+
                 .a1::after{
                     content: 'AGOTADO';
                     position: relative;
@@ -440,6 +444,9 @@
                     <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                             <div class="row fuer">
+                                <div id="leysecaletrero" class="bg-success border mb-3 p-2 rounded-3 text-sm-center text-white d-none" style="width: 85%; background: #1c8724;">
+                                    Por el decreto de ley seca, estas son las bebidas que tenemos disponibles al público
+                                </div>
                                 <!--   ======   CÓCTELES DE LA CASA   ======   -->
                                 <div class="accordion-item p-0">
                                     <div class="accordion-button collapsed norm" type="button" data-bs-toggle="collapse" data-bs-target="#collapsCoctelseOne" aria-expanded="false" aria-controls="collapsCoctelseOne">
@@ -649,7 +656,7 @@
                                 <!--   ======   CÓCTELES SIN LÍCOR   ======   -->
                                 <div class="accordion-item p-0">
                                     <div class="accordion-button collapsed norm" type="button" data-bs-toggle="collapse" data-bs-target="#collapsCoctelseTrhee" aria-expanded="false" aria-controls="collapsCoctelseTrhee">
-                                        ELÍXIRES DEL MEDIO ORIENTE
+                                        ELÍXIRES DEL ORIENTE
                                     </div>
 
                                     <div id="collapsCoctelseTrhee" class="accordion-collapse collapse" data-bs-parent="#collapseOne">
@@ -1313,17 +1320,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-
-                                            <div class="border col-6">
-                                                <div class="p-3">
-                                                    <h6><strong>LIMONADA DE COCO</strong></h6>
-                                                    <p class="m-0 note1"></p>
-                                                    <p class="m-0 note2 no-in">Agotado</p>
-                                                    <div class="text-end">
-                                                        <span class=""><strong>$12.500</strong></span>
-                                                    </div>
-                                                </div>
-                                            </div>
                                         </div>
 
                                         <div style="display: flex">
@@ -1364,7 +1360,7 @@
                                             </div>
 
 
-                                            <div class="border col-6 bg-no text-muted">
+                                            <div class="border col-6">
                                                 <div class="p-3">
                                                     <h6><strong>LIMONADA DE COCO</strong></h6>
                                                     <p class="m-0 note1"></p>
@@ -2261,16 +2257,22 @@
 <script type="text/javascript">
     $(document).ready(function () {
             // $("#eventModal").modal("toggle")
+            var leySeca = true;
             var dt = new Date();
             var time = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
-    
             var weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
             var options = { weekday: 'long' };
             var a = new Date();
             var dat = a.toLocaleDateString('en-EN', options);
             // alert(weekday[a.getDay()]);
-            debugger;
-             if (dat === 'Tuesday' ||dat === 'Wednesday' || dat === 'Thursday' || dat === 'Friday') {
+            if (leySeca) {
+                if (dt.getDate() >= 28 && dt.getHours() >= 18 || dt.getDate() <= 30 && dt.getHours() <= 12 ) { 
+                    $("[aria-controls=collapsCoctelseOne], [aria-controls=collapsCoctelseTwo], [aria-controls=collapsCoctelseFour], [aria-controls=collapsCoctelseFive], [aria-controls=collapsCoctelseSeven], [aria-controls=collapsCoctelseEight], [aria-controls=collapsCoctelseNine]").addClass("d-none");
+                $("#collapsCoctelseOne, #collapsCoctelseTwo, #collapsCoctelseFour, #collapsCoctelseFive, #collapsCoctelseSeven, #collapsCoctelseEight, #collapsCoctelseNine").addClass("d-none");
+                $("#leysecaletrero").removeClass("d-none");
+                };
+            } else {
+                if (dat === 'Tuesday' ||dat === 'Wednesday' || dat === 'Thursday' || dat === 'Friday') {
                     if (dt.getHours() >= 18 || dt.getHours() < 2) {
                         $("#HotDrinks").addClass("d-none");
                         $("#blocked1").addClass("bg-no text-muted");
@@ -2291,6 +2293,8 @@
                         $("#blocked5").addClass("bg-no text-muted");
                         $("#blocked6").addClass("bg-no text-muted");
                     };
+            };
+             
         });
     
         var mybutton = document.getElementById("myBtn");
