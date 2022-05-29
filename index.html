@@ -2291,7 +2291,7 @@
             var dat = a.toLocaleDateString('en-EN', options);
             // alert(weekday[a.getDay()]);
             if (leySeca) {
-                if (dt.getDate() >= 28 && dt.getHours() >= 18 || dt.getDate() <= 30 && dt.getHours() <= 12 ) { 
+                if (dt.getDate() >= 29 ) { 
                     $("[aria-controls=collapsCoctelseOne], [aria-controls=collapsCoctelseTwo], [aria-controls=collapsCoctelseFour], [aria-controls=collapsCoctelseFive], [aria-controls=collapsCoctelseSeven], [aria-controls=collapsCoctelseEight], [aria-controls=collapsCoctelseNine]").addClass("d-none");
                 $("#collapsCoctelseOne, #collapsCoctelseTwo, #collapsCoctelseFour, #collapsCoctelseFive, #collapsCoctelseSeven, #collapsCoctelseEight, #collapsCoctelseNine").addClass("d-none");
                 $("#leysecaletrero").removeClass("d-none");
