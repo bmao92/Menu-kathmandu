@@ -1042,7 +1042,7 @@
                                                 VINOS TINTOS
                                             </div>
                                             <div style="display: flex">
-                                                <div class="col-6 p-2 bg-no text-muted">
+                                                <div class="col-6 p-2">
                                                     <div>
                                                         <h6><strong>KILLKA</strong><img src="https://cdn-icons-png.flaticon.com/512/197/197573.png"></h6>
                                                         <p class="m-0 note1">Malbec - Mendoza</p>
@@ -1178,7 +1178,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-6 p-2 bg-no text-muted">
+                                                <div class="col-6 p-2">
                                                     <div>
                                                         <h6><strong>AMOROSA</strong><img src="https://cdn-icons-png.flaticon.com/512/197/197626.png"></h6>
                                                         <p class="m-0 note1">Lamburusco moderia</p>
@@ -1310,7 +1310,7 @@
                                             </div>
                                         </div>
 
-                                        <div style="display: none">
+                                        <div style="display: flex">
                                             <div id="blocked1" class="border col-6">
                                                 <div class="p-3">
                                                     <h6><strong>LIMONADA</strong></h6>
@@ -1334,7 +1334,7 @@
                                             </div>
                                         </div>
 
-                                        <div style="display: none">
+                                        <div style="display: flex">
                                             <div id="blocked3" class="border col-6">
                                                 <div class="p-3">
                                                     <h6><strong>LIMONADA HIERBABUENA</strong></h6>
@@ -1342,6 +1342,17 @@
                                                     <p class="m-0 note2 no-in">Agotado</p>
                                                     <div class="text-end">
                                                         <span class=""><strong>$10.500</strong></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div id="blocked3" class="border col-6">
+                                                <div class="p-3">
+                                                    <h6><strong>LIMONADA DE COCO</strong></h6>
+                                                    <p class="m-0 note1"></p>
+                                                    <p class="m-0 note2 no-in">Agotado</p>
+                                                    <div class="text-end">
+                                                        <span class=""><strong>$12.500</strong></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1360,7 +1371,7 @@
                                             </div>
 
 
-                                            <div class="border col-6 bg-no text-muted">
+                                            <div class="border col-6">
                                                 <div class="p-3">
                                                     <h6><strong>SMIRNOFF ICE</strong></h6>
                                                     <p class="m-0 note1"></p>
@@ -1385,15 +1396,8 @@
                                             </div>
 
 
-                                            <div class="border col-6">
-                                                <div class="p-3">
-                                                    <h6><strong>LIMONADA DE COCO</strong></h6>
-                                                    <p class="m-0 note1"></p>
-                                                    <p class="m-0 note2 no-in">Agotado</p>
-                                                    <div class="text-end">
-                                                        <span class=""><strong>$12.500</strong></span>
-                                                    </div>
-                                                </div>
+                                            <div class="border col-6 bg-no text-muted">
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -1432,7 +1436,7 @@
 
 
                                         <div style="display: flex">
-                                            <div class="border col-6 bg-no text-muted">
+                                            <div class="border col-6">
                                                 <div class="p-3">
                                                     <h6><strong>BUDWEISER</strong></h6>
                                                     <p class="m-0 note1"></p>
@@ -1446,7 +1450,7 @@
                                             <div class="border col-6">
                                                 <div class="p-3">
                                                     <h6 class=""><strong>CLUB COLOMBIA</strong></h6>
-                                                    <p class="m-0 note1">Dorada, Negra y Doble malta.</p>
+                                                    <p class="m-0 note1">Dorada, Negra, Roja y Doble malta.</p>
                                                     <p class="m-0 note2 no-in">Agotado</p>
                                                     <div class="text-end">
                                                         <span class=""><strong>$14.000</strong></span>
@@ -1853,7 +1857,7 @@
                                             <span class=""><strong>$14.500</strong></span>
                                         </div>
                                     </div>
-                                    <div class="bg-no text-muted">
+                                    <div class="">
                                         <h6><strong>INDIOS</strong></h6>
                                         <p class="m-0 note1">Rollitos de carne y arroz envueltos en hoja de parra. Acompañados de labneh (6 unidades).</p>
                                         <div class="text-end">
@@ -2016,7 +2020,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-6 bg-no text-muted">
+                                        <div class="col-6">
                                             <h6><strong>PAN PARATHA</strong></h6>
                                             <p class="m-0 note1">Clásico pan hindú.</p>
                                             <div class="text-end">
@@ -2204,7 +2208,7 @@
                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                         <div class="accordion-body col-12 desserts">
                             <div class="row">
-                                <div class="col-6 mb-2 bg-no text-muted">
+                                <div class="col-6 mb-2">
                                     <div class="border col-12 h-100">
                                         <div class="col">
                                             <h6 class="text-center"><strong>SPRING ROLLS DULCES</strong></h6>
@@ -2282,7 +2286,7 @@
 <script type="text/javascript">
     $(document).ready(function () {
             // $("#eventModal").modal("toggle")
-            var leySeca = true;
+            var leySeca = false;
             var dt = new Date();
             var time = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
             var weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -2297,26 +2301,26 @@
                 $("#leysecaletrero").removeClass("d-none");
                 };
             } else {
-                if (dat === 'Tuesday' ||dat === 'Wednesday' || dat === 'Thursday' || dat === 'Friday') {
+                if (dat === '' ||dat === '' || dat === 'Thursday' || dat === 'Friday') {
                     if (dt.getHours() >= 18 || dt.getHours() < 2) {
-                        $("#HotDrinks").addClass("d-none");
-                        $("#blocked1").addClass("bg-no text-muted");
-                        $("#blocked2").addClass("bg-no text-muted");
-                        $("#blocked3").addClass("bg-no text-muted");
-                        $("#blocked4").addClass("bg-no text-muted");
-                        $("#blocked5").addClass("bg-no text-muted");
-                        $("#blocked6").addClass("bg-no text-muted");
+                        // $("#HotDrinks").addClass("d-none");
+                        // $("#blocked1").addClass("bg-no text-muted");
+                        // $("#blocked2").addClass("bg-no text-muted");
+                        // $("#blocked3").addClass("bg-no text-muted");
+                        // $("#blocked4").addClass("bg-no text-muted");
+                        // $("#blocked5").addClass("bg-no text-muted");
+                        // $("#blocked6").addClass("bg-no text-muted");
                     };
               } else if (dat === 'Sunday' || dat === 'Saturday') {
                 if (dt.getHours() >= 12 || dt.getHours() < 2) {
-                        $("#HotDrinks").addClass("d-none");
+                        //$("#HotDrinks").addClass("d-none");
                     };
-                        $("#blocked1").addClass("bg-no text-muted");
-                        $("#blocked2").addClass("bg-no text-muted");
-                        $("#blocked3").addClass("bg-no text-muted");
-                        $("#blocked4").addClass("bg-no text-muted");
-                        $("#blocked5").addClass("bg-no text-muted");
-                        $("#blocked6").addClass("bg-no text-muted");
+                        // $("#blocked1").addClass("bg-no text-muted");
+                        // $("#blocked2").addClass("bg-no text-muted");
+                        // $("#blocked3").addClass("bg-no text-muted");
+                        // $("#blocked4").addClass("bg-no text-muted");
+                        // $("#blocked5").addClass("bg-no text-muted");
+                        // $("#blocked6").addClass("bg-no text-muted");
                     };
             };
              
