@@ -1263,7 +1263,7 @@
                                         </div>
 
                                         <div style="display: none">
-                                            <div id="blocked5" class="border col-6">
+                                            <div i5" class="border col-6">
                                                 <div class="p-3">
                                                     <h6><strong>JUGO EN AGUA</strong></h6>
                                                     <p class="m-0 note1">Maracuyá, Mango, Mora, Piña y Durazno.</p>
@@ -1274,7 +1274,7 @@
                                                 </div>
                                             </div>
 
-                                            <div id="blocked6" class="border col-6">
+                                            <div class="border col-6">
                                                 <div class="p-3">
                                                     <h6><strong>JUGO EN LECHE</strong></h6>
                                                     <p class="m-0 note1">Maracuyá, Mango, Mora, Piña y Durazno.</p>
@@ -1311,7 +1311,7 @@
                                         </div>
 
                                         <div style="display: flex">
-                                            <div id="blocked1" class="border col-6">
+                                            <div class="border col-6">
                                                 <div class="p-3">
                                                     <h6><strong>LIMONADA</strong></h6>
                                                     <p class="m-0 note1"></p>
@@ -1322,7 +1322,7 @@
                                                 </div>
                                             </div>
 
-                                            <div id="blocked2" class="border col-6">
+                                            <div class="border col-6">
                                                 <div class="p-3">
                                                     <h6><strong>LIMONADA CEREZADA</strong></h6>
                                                     <p class="m-0 note1"></p>
@@ -1335,7 +1335,7 @@
                                         </div>
 
                                         <div style="display: flex">
-                                            <div id="blocked3" class="border col-6">
+                                            <div class="border col-6">
                                                 <div class="p-3">
                                                     <h6><strong>LIMONADA HIERBABUENA</strong></h6>
                                                     <p class="m-0 note1"></p>
@@ -1346,7 +1346,7 @@
                                                 </div>
                                             </div>
                                             
-                                            <div id="blocked3" class="border col-6">
+                                            <div class="border col-6">
                                                 <div class="p-3">
                                                     <h6><strong>LIMONADA DE COCO</strong></h6>
                                                     <p class="m-0 note1"></p>
@@ -2284,48 +2284,10 @@
 </html>
 
 <script type="text/javascript">
-    $(document).ready(function () {
-            // $("#eventModal").modal("toggle")
-            var leySeca = false;
-            var dt = new Date();
-            var time = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
-            var weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-            var options = { weekday: 'long' };
-            var a = new Date();
-            var dat = a.toLocaleDateString('en-EN', options);
-            // alert(weekday[a.getDay()]);
-            if (leySeca) {
-                if (dt.getDate() >= 29 ) { 
-                    $("[aria-controls=collapsCoctelseOne], [aria-controls=collapsCoctelseTwo], [aria-controls=collapsCoctelseFour], [aria-controls=collapsCoctelseFive], [aria-controls=collapsCoctelseSeven], [aria-controls=collapsCoctelseEight], [aria-controls=collapsCoctelseNine]").addClass("d-none");
-                $("#collapsCoctelseOne, #collapsCoctelseTwo, #collapsCoctelseFour, #collapsCoctelseFive, #collapsCoctelseSeven, #collapsCoctelseEight, #collapsCoctelseNine").addClass("d-none");
-                $("#leysecaletrero").removeClass("d-none");
-                };
-            } else {
-                if (dat === '' ||dat === '' || dat === 'Thursday' || dat === 'Friday') {
-                    if (dt.getHours() >= 18 || dt.getHours() < 2) {
-                        // $("#HotDrinks").addClass("d-none");
-                        // $("#blocked1").addClass("bg-no text-muted");
-                        // $("#blocked2").addClass("bg-no text-muted");
-                        // $("#blocked3").addClass("bg-no text-muted");
-                        // $("#blocked4").addClass("bg-no text-muted");
-                        // $("#blocked5").addClass("bg-no text-muted");
-                        // $("#blocked6").addClass("bg-no text-muted");
-                    };
-              } else if (dat === 'Sunday' || dat === 'Saturday') {
-                if (dt.getHours() >= 12 || dt.getHours() < 2) {
-                        //$("#HotDrinks").addClass("d-none");
-                    };
-                        // $("#blocked1").addClass("bg-no text-muted");
-                        // $("#blocked2").addClass("bg-no text-muted");
-                        // $("#blocked3").addClass("bg-no text-muted");
-                        // $("#blocked4").addClass("bg-no text-muted");
-                        // $("#blocked5").addClass("bg-no text-muted");
-                        // $("#blocked6").addClass("bg-no text-muted");
-                    };
-            };
-             
-        });
-    
+    $(document).ready(function () {+
+        //Load
+    });
+
         var mybutton = document.getElementById("myBtn");
     
         // When the user scrolls down 20px from the top of the document, show the button
@@ -2337,11 +2299,12 @@
             } else {
                 mybutton.style.display = "none";
             }
-        }
+        };
     
         // When the user clicks on the button, scroll to the top of the document
         function topFunction() {
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
-        }
+        };
+    
 </script>
