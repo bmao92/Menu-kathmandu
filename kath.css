@@ -117,8 +117,9 @@ body{
 }
 
 .p-3.v-tintos {
-    background: linear-gradient(180deg, rgb(193 165 203) 0%, rgb(153 116 179) 90%, rgba(174,206,211,1) 100%);
-}
+    background: #000000;
+background: rgb(2,0,36);
+background: linear-gradient(180deg, #230030 10%, #a373b5 60%, #dad9f4 100%);}
 
 .copa{
     background: hsl(0deg 0% 0% / 11%);
@@ -136,7 +137,7 @@ body{
 }
 
 .p-3.v-blancos {
-    background: #aeced3;
+    background: linear-gradient(180deg, #dad8f4 10%, #8ed4df 60%, #e3d9eb 100%);
 }
 
 .p-3.v-blancos .col-6.p-2 {
@@ -169,15 +170,16 @@ body{
 .p-3.v-tintos > div:first-child,
 .p-3.v-blancos > div:first-child,
 .p-3.v-rosados > div:first-child,
-.p-3.v-premium > div:first-child{
+.p-3.v-premium > div:first-child,
+.p-3.v-e > div:first-child{
     padding: 5px;
     font-weight: 600;
     text-align:     center;
 }
 
 .p-3.v-rosados {
-    background: #ffd7ea;
-}
+    
+background: linear-gradient(180deg, #e3d9eb 10%, #e97bb0 60%, #ffd1ce 100%);}
 
 .minh-100{
     min-height: 100px;
@@ -395,9 +397,16 @@ h6.text-center {
     -webkit-tap-highlight-color: transparent;
 }
 
-.p-3.v-r,
 .p-3.v-premium {
-    background: bisque;
+    
+background: linear-gradient(180deg, #ffd0ce 10%, #d99749 60%, #ccb79d 100%);}
+
+.p-3.v-e {
+background: linear-gradient(180deg, #ccb79c 10%, #919191 60%, #666666 100%);
+}
+
+.p-3.v-e > div:first-child {
+    background: #6c757d;
 }
 
 #collapseOne .accordion-item  div.border{
