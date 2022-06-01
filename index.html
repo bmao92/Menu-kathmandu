@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="kath.css">
 </head>
 <body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top" style="display: block;"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top" style="display: none;"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
     <div class="container" style="max-width: 500px;">
         <div>
             <nav class="fixed-top navbar navbar-dark">
@@ -27,11 +27,11 @@
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                             BEBIDAS
                         </button>
                     </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
                         <div class="accordion-body">
                             <div class="row fuer">
                                 <div id="leysecaletrero" class="bg-success border mb-3 p-2 rounded-3 text-sm-center text-white d-none" style="width: 85%; background: #1c8724;">
@@ -622,11 +622,11 @@
 
                                 <!--   ======   VINOS   ======   -->
                                 <div class="accordion-item p-0">
-                                    <div class="accordion-button norm" type="button" data-bs-toggle="collapse" data-bs-target="#collapsCoctelseSeven" aria-expanded="true" aria-controls="collapsCoctelseSeven">
+                                    <div class="accordion-button norm collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsCoctelseSeven" aria-expanded="false" aria-controls="collapsCoctelseSeven">
                                         VINOS
                                     </div>
 
-                                    <div id="collapsCoctelseSeven" class="accordion-collapse collapse show" data-bs-parent="#collapseOne" style="">
+                                    <div id="collapsCoctelseSeven" class="accordion-collapse collapse" data-bs-parent="#collapseOne" style="">
                                         <div class="p-3 v-tintos">
                                             <div>
                                                 VINOS TINTOS
@@ -1829,8 +1829,6 @@
         </div>
     </div>
 
-
-
 <script type="text/javascript">
     $(document).ready(function () {
         //Load
@@ -1858,31 +1856,3 @@
 </script>
 
 </body>
-</html>
-
-<script type="text/javascript">
-    $(document).ready(function () {
-        //Load
-    });
-
-    var mybutton = document.getElementById("myBtn");
-    
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () { scrollFunction() };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        };
-
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        };
-
-</script>
-
