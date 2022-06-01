@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="kath.css">
 </head>
 <body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top" style="display: block;"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
     <div class="container" style="max-width: 500px;">
         <div>
             <nav class="fixed-top navbar navbar-dark">
@@ -27,11 +27,11 @@
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                             BEBIDAS
                         </button>
                     </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
                         <div class="accordion-body">
                             <div class="row fuer">
                                 <div id="leysecaletrero" class="bg-success border mb-3 p-2 rounded-3 text-sm-center text-white d-none" style="width: 85%; background: #1c8724;">
@@ -145,11 +145,11 @@
 
                                 <!--   ======   EXÓTICOS CÓCTELES ORIENTALES   ======   -->
                                 <div class="accordion-item p-0">
-                                    <div class="accordion-button collapsed norm" type="button" data-bs-toggle="collapse" data-bs-target="#collapsCoctelseTwo" aria-expanded="false" aria-controls="collapsCoctelseTwo">
+                                    <div class="accordion-button norm collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsCoctelseTwo" aria-expanded="false" aria-controls="collapsCoctelseTwo">
                                         EXÓTICOS CÓCTELES ORIENTALES
                                     </div>
 
-                                    <div id="collapsCoctelseTwo" class="accordion-collapse collapse" data-bs-parent="#collapseOne">
+                                    <div id="collapsCoctelseTwo" class="accordion-collapse collapse" data-bs-parent="#collapseOne" style="">
 
                                         <div style="display: flex">
                                             <div class="border col-6">
@@ -320,11 +320,11 @@
 
                                 <!--   ======   CÓCTELES TRADICIONALES   ======   -->
                                 <div class="accordion-item p-0">
-                                    <div class="accordion-button collapsed norm" type="button" data-bs-toggle="collapse" data-bs-target="#collapsCoctelseFour" aria-expanded="false" aria-controls="collapsCoctelseFour">
+                                    <div class="accordion-button norm collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsCoctelseFour" aria-expanded="false" aria-controls="collapsCoctelseFour">
                                         CÓCTELES TRADICIONALES
                                     </div>
 
-                                    <div id="collapsCoctelseFour" class="accordion-collapse collapse" data-bs-parent="#collapseOne">
+                                    <div id="collapsCoctelseFour" class="accordion-collapse collapse" data-bs-parent="#collapseOne" style="">
                                         <div style="display: flex">
                                             <div class="border col-6">
                                                 <div class="p-3">
@@ -446,11 +446,11 @@
 
                                 <!--   ======   CÓCTELES PREMIUM   ======   -->
                                 <div class="accordion-item p-0">
-                                    <div class="accordion-button collapsed norm" type="button" data-bs-toggle="collapse" data-bs-target="#collapsCoctelseFive" aria-expanded="false" aria-controls="collapsCoctelseFive">
+                                    <div class="accordion-button norm collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsCoctelseFive" aria-expanded="false" aria-controls="collapsCoctelseFive">
                                         CÓCTELES PREMIUM
                                     </div>
 
-                                    <div id="collapsCoctelseFive" class="accordion-collapse collapse" data-bs-parent="#collapseOne">
+                                    <div id="collapsCoctelseFive" class="accordion-collapse collapse" data-bs-parent="#collapseOne" style="">
                                         <div style="display: flex">
                                             <div class="border col-6">
                                                 <div class="p-3">
@@ -496,11 +496,11 @@
 
                                 <!--   ======   BEBIDAS CALIENTES   ======   -->
                                 <div id="HotDrinks" class="accordion-item p-0">
-                                    <div class="accordion-button collapsed norm" type="button" data-bs-toggle="collapse" data-bs-target="#collapsCoctelseSix" aria-expanded="false" aria-controls="collapsCoctelseSix">
+                                    <div class="accordion-button norm collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsCoctelseSix" aria-expanded="false" aria-controls="collapsCoctelseSix">
                                         BEBIDAS CALIENTES
                                     </div>
 
-                                    <div id="collapsCoctelseSix" class="accordion-collapse collapse" data-bs-parent="#collapseOne">
+                                    <div id="collapsCoctelseSix" class="accordion-collapse collapse" data-bs-parent="#collapseOne" style="">
                                         <div style="display: flex">
                                             <div class="border col-6">
                                                 <div class="p-3">
@@ -622,11 +622,11 @@
 
                                 <!--   ======   VINOS   ======   -->
                                 <div class="accordion-item p-0">
-                                    <div class="accordion-button collapsed norm" type="button" data-bs-toggle="collapse" data-bs-target="#collapsCoctelseSeven" aria-expanded="false" aria-controls="collapsCoctelseSeven">
+                                    <div class="accordion-button norm" type="button" data-bs-toggle="collapse" data-bs-target="#collapsCoctelseSeven" aria-expanded="true" aria-controls="collapsCoctelseSeven">
                                         VINOS
                                     </div>
 
-                                    <div id="collapsCoctelseSeven" class="accordion-collapse collapse" data-bs-parent="#collapseOne">
+                                    <div id="collapsCoctelseSeven" class="accordion-collapse collapse show" data-bs-parent="#collapseOne" style="">
                                         <div class="p-3 v-tintos">
                                             <div>
                                                 VINOS TINTOS
@@ -797,7 +797,7 @@
                                                 </div>
                                                 <div class="col-6 p-2">
                                                     <div>
-                                                        <h6><strong>MOET & CHANDON</strong><img src="https://cdn-icons-png.flaticon.com/512/197/197560.png"></h6>
+                                                        <h6><strong>MOET &amp; CHANDON</strong><img src="https://cdn-icons-png.flaticon.com/512/197/197560.png"></h6>
                                                         <p class="m-0 note1">Champagne</p>
                                                         <div class="text-end">
                                                             <span class=""><strong>$365.000</strong></span>
@@ -807,11 +807,11 @@
                                             </div>
                                         </div>
 
-                                        <div class="p-3 v-r d-none">
+                                        <div class="p-3 v-e" style="background: linear-gradient(180deg, #ccb79c 10%, #919191 60%, #666666 100%);">
                                             <div>
                                                 VINO ESPUMANTE
                                             </div>
-                                            <div>
+                                            <div style="border: 1px solid #6c757d;background: #d5d5d5;" class="p-2">
                                                 <h6><strong>SANTIAGO 1541</strong><img src="https://cdn-icons-png.flaticon.com/512/197/197586.png"></h6>
                                                 <p class="m-0 note1">Demi Sec</p>
                                                 <div class="text-end">
@@ -824,11 +824,11 @@
 
                                 <!--   ======   OTROS   ======   -->
                                 <div class="accordion-item p-0">
-                                    <div class="accordion-button collapsed norm" type="button" data-bs-toggle="collapse" data-bs-target="#collapsCoctelesSeven" aria-expanded="false" aria-controls="collapsCoctelesSeven">
+                                    <div class="accordion-button norm collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsCoctelesSeven" aria-expanded="false" aria-controls="collapsCoctelesSeven">
                                         OTRAS BEBIDAS
                                     </div>
 
-                                    <div id="collapsCoctelesSeven" class="accordion-collapse collapse" data-bs-parent="#collapseOne">
+                                    <div id="collapsCoctelesSeven" class="accordion-collapse collapse" data-bs-parent="#collapseOne" style="">
                                         <div style="display: flex">
                                             <div class="border col-6">
                                                 <div class="p-3">
@@ -853,7 +853,7 @@
                                         </div>
 
                                         <div style="display: none">
-                                            <div i5" class="border col-6">
+                                            <div i5"="" class="border col-6">
                                                 <div class="p-3">
                                                     <h6><strong>JUGO EN AGUA</strong></h6>
                                                     <p class="m-0 note1">Maracuyá, Mango, Mora, Piña y Durazno.</p>
@@ -903,54 +903,6 @@
                                         <div style="display: flex">
                                             <div class="border col-6">
                                                 <div class="p-3">
-                                                    <h6><strong>LIMONADA</strong></h6>
-                                                    <p class="m-0 note1"></p>
-                                                    <p class="m-0 note2 no-in">Agotado</p>
-                                                    <div class="text-end">
-                                                        <span class=""><strong>$9.500</strong></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="border col-6">
-                                                <div class="p-3">
-                                                    <h6><strong>LIMONADA CEREZADA</strong></h6>
-                                                    <p class="m-0 note1"></p>
-                                                    <p class="m-0 note2 no-in">Agotado</p>
-                                                    <div class="text-end">
-                                                        <span class=""><strong>$12.500</strong></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div style="display: flex">
-                                            <div class="border col-6">
-                                                <div class="p-3">
-                                                    <h6><strong>LIMONADA HIERBABUENA</strong></h6>
-                                                    <p class="m-0 note1"></p>
-                                                    <p class="m-0 note2 no-in">Agotado</p>
-                                                    <div class="text-end">
-                                                        <span class=""><strong>$10.500</strong></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="border col-6">
-                                                <div class="p-3">
-                                                    <h6><strong>LIMONADA DE COCO</strong></h6>
-                                                    <p class="m-0 note1"></p>
-                                                    <p class="m-0 note2 no-in">Agotado</p>
-                                                    <div class="text-end">
-                                                        <span class=""><strong>$12.500</strong></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div style="display: flex">
-                                            <div class="border col-6">
-                                                <div class="p-3">
                                                     <h6><strong>RED BULL</strong></h6>
                                                     <p class="m-0 note1"></p>
                                                     <p class="m-0 note2 no-in">Agotado</p>
@@ -985,9 +937,15 @@
                                                 </div>
                                             </div>
 
-
-                                            <div class="border col-6 bg-no text-muted">
-                                                
+                                            <div class="border col-6">
+                                                <div class="p-3">
+                                                    <h6><strong>LIMONADA DE COCO</strong></h6>
+                                                    <p class="m-0 note1"></p>
+                                                    <p class="m-0 note2 no-in">Agotado</p>
+                                                    <div class="text-end">
+                                                        <span class=""><strong>$12.500</strong></span>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -995,11 +953,11 @@
 
                                 <!--   ======   CERVEZAS   ======   -->
                                 <div class="accordion-item p-0">
-                                    <div class="accordion-button collapsed norm" type="button" data-bs-toggle="collapse" data-bs-target="#collapsCoctelseEight" aria-expanded="false" aria-controls="collapsCoctelseEight">
+                                    <div class="accordion-button norm collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsCoctelseEight" aria-expanded="false" aria-controls="collapsCoctelseEight">
                                         CERVEZAS
                                     </div>
 
-                                    <div id="collapsCoctelseEight" class="accordion-collapse collapse" data-bs-parent="#collapseOne">
+                                    <div id="collapsCoctelseEight" class="accordion-collapse collapse" data-bs-parent="#collapseOne" style="">
                                         <div style="display: flex">
                                             <div class="border col-6">
                                                 <div class="p-3">
@@ -1028,11 +986,11 @@
                                         <div style="display: flex">
                                             <div class="border col-6">
                                                 <div class="p-3">
-                                                    <h6><strong>BUDWEISER</strong></h6>
-                                                    <p class="m-0 note1"></p>
+                                                    <h6><strong>BBC</strong></h6>
+                                                    <p class="m-0 note1">Cajicá(Miel), Monserrate(Roja) y Chapinero(Negra)</p>
                                                     <p class="m-0 note2 no-in">Agotado</p>
                                                     <div class="text-end">
-                                                        <span class=""><strong>$14.000</strong></span>
+                                                        <span class=""><strong>$16.000</strong></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1052,11 +1010,11 @@
                                         <div style="display: flex">
                                             <div class="border col-6">
                                                 <div class="p-3">
-                                                    <h6><strong>BBC</strong></h6>
-                                                    <p class="m-0 note1">Cajicá(Miel), Monserrate(Roja) y Chapinero(Negra)</p>
+                                                    <h6><strong>BUDWEISER</strong></h6>
+                                                    <p class="m-0 note1"></p>
                                                     <p class="m-0 note2 no-in">Agotado</p>
                                                     <div class="text-end">
-                                                        <span class=""><strong>$16.000</strong></span>
+                                                        <span class=""><strong>$14.000</strong></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1070,15 +1028,15 @@
 
                                 <!--   ======   LÍCORES   ======   -->
                                 <div class="accordion-item p-0">
-                                    <div class="accordion-button collapsed norm" type="button" data-bs-toggle="collapse" data-bs-target="#collapsCoctelseNine" aria-expanded="false" aria-controls="collapsCoctelseNine">
+                                    <div class="accordion-button norm collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsCoctelseNine" aria-expanded="false" aria-controls="collapsCoctelseNine">
                                         LÍCORES
                                     </div>
 
-                                    <div id="collapsCoctelseNine" class="accordion-collapse collapse" data-bs-parent="#collapseOne">
+                                    <div id="collapsCoctelseNine" class="accordion-collapse collapse" data-bs-parent="#collapseOne" style="">
                                         <table class="table-bordered border" style="margin: auto;width: 100%;background: #ededed;font-size: 12px;">
 
                                             <!-- ============ WHISKY ============ -->
-                                            <tr class="bg-dark">
+                                            <tbody><tr class="bg-dark">
                                                 <td>WHISKY</td>
                                                 <td class="text-center">Botellla</td>
                                                 <td class="text-center">Media</td>
@@ -1366,7 +1324,7 @@
                                                     <br>
                                                 </td>
                                             </tr>
-                                        </table>
+                                        </tbody></table>
                                     </div>
                                 </div>
                             </div>
@@ -1380,7 +1338,7 @@
                         ENTRADAS
                         </button>
                     </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" style="">
                         <div class="accordion-body fuuu">
                             <div class="row fuer">
                                 <div class="divColorMenu">
@@ -1473,7 +1431,7 @@
                         PLATOS FUERTES
                         </button>
                     </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample" style="">
                         <div class="accordion-body fuuu">
                             <div class="row fuer">
 
@@ -1795,7 +1753,7 @@
                         POSTRES
                         </button>
                     </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample" style="">
                         <div class="accordion-body col-12 desserts">
                             <div class="row">
                                 <div class="col-6 mb-2">
@@ -1870,6 +1828,35 @@
             </div>
         </div>
     </div>
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        //Load
+    });
+
+    var mybutton = document.getElementById("myBtn");
+    
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        };
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        };
+
+</script>
+
 </body>
 </html>
 
