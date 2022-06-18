@@ -14,7 +14,9 @@
     <link rel="stylesheet" type="text/css" href="kath.css">
 </head>
 <body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top" style="display: none;"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top" style="display: none;"><i class="fa fa-chevron-up" aria-hidden="true"></i><br>
+        <span>Ir arriba</span>
+    </button>
     <div class="container" style="max-width: 500px;">
         <div>
             <nav class="fixed-top navbar navbar-dark">
@@ -310,8 +312,8 @@
                                                 </div>
                                             </div>
 
-                                           <div class="border col-6 bg-no text-muted">
-                                                
+                                            <div class="border col-6 bg-no text-muted">
+
                                             </div>
 
                                         </div>
@@ -831,7 +833,7 @@
                                     <div id="collapsCoctelesSeven" class="accordion-collapse collapse" data-bs-parent="#collapseOne" style="">
                                         <div style="display: flex">
                                             <div class="border col-6">
-                                                <div class="p-3 bg-no text-muted ">
+                                                <div class="p-3">
                                                     <h6><strong>GASEOSA</strong></h6>
                                                     <p class="m-0 note1">Coca-Cola(tradicional y Zero)</p>
                                                     <div class="text-end">
@@ -852,7 +854,7 @@
                                             </div>
                                         </div>
 
-                                        <div style="display: none">
+                                        <!-- <div style="display: none">
                                             <div i5"="" class="border col-6">
                                                 <div class="p-3">
                                                     <h6><strong>JUGO EN AGUA</strong></h6>
@@ -874,7 +876,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
 
                                         <div style="display: flex">
                                             <div class="border col-6">
@@ -887,7 +889,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                             <div class="border col-6">
+                                            <div class="border col-6">
                                                 <div class="p-3">
                                                     <h6><strong>SODA HANUMAN</strong></h6>
                                                     <p class="m-0 note1">Refrescante bebida con limóm, hierbabuena, uchuva y maracuyá.</p>
@@ -1025,7 +1027,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                                <div class="border col-6">
+                                            <div class="border col-6">
                                                 <div class="p-3">
                                                     <h6 class=""><strong>MIRLA</strong></h6>
                                                     <p class="m-0 note1">"Nunca satisfechos"<br><br><strong>EXTRA STOUT</strong></p>
@@ -1075,7 +1077,7 @@
                                             </div>  
                                             <div class="border col-6 bg-no">
                                                 <div class="p-3">
-                                                   
+
                                                 </div>
                                             </div>
                                         </div>
@@ -1391,7 +1393,7 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingTwo">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        ENTRADAS
+                            ENTRADAS
                         </button>
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" style="">
@@ -1491,7 +1493,7 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingThree">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        PLATOS FUERTES
+                            PLATOS FUERTES
                         </button>
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample" style="">
@@ -1503,20 +1505,20 @@
                                     <div class="RegionsTitle row">
                                         <h5>MEDIO ORIENTE</h5>
                                     </div>
-                                    <div class="d-none">
-                                        <h6><strong>PLATO ÁRABE</strong></h6>
-                                        <p class="m-0 note1">Kabab Kafta, Kibbe, Falafel, Pan Arabe, Indios, Arroz Almendrado, Tabule, Labneh, Tahine de Garbanzo y Tahine de Berenjena.</p>
-                                        <div class="text-end">
-                                            <span class=""><strong>$36.500</strong></span>
-                                        </div>
-                                    </div>
-
                                     <div class="">
                                         <h6><strong>MAZZA</strong></h6>
                                         <span><strong>Ideal para 2 personas</strong></span>
                                         <p class="m-0 note1">Pollo y lome en julianas, 2 Kibbe, 3 Falafels, 2 Indios, 4 Pan Árabe, Tabule, Labneh, Tahine de Garbanzo y Tahine de Berenjena.</p>
                                         <div class="text-end">
                                             <span class=""><strong>$66.500</strong></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-none">
+                                        <h6><strong>PLATO ÁRABE</strong></h6>
+                                        <p class="m-0 note1">Kabab Kafta, Kibbe, Falafel, Pan Arabe, Indios, Arroz Almendrado, Tabule, Labneh, Tahine de Garbanzo y Tahine de Berenjena.</p>
+                                        <div class="text-end">
+                                            <span class=""><strong>$36.500</strong></span>
                                         </div>
                                     </div>
 
@@ -1776,7 +1778,7 @@
 
                                     <div>
                                         <h6><strong>CEVICHE TALAI</strong></h6>
-                                        <p class="m-0 note1">Combinación de leche de tigre(ajinimoto, brandy ,pimenón, cebolla, limón, naranja, leche de coco, gotas de sambal,cilantro) y champiñones, servido con media lunas de mango.</p>
+                                        <p class="m-0 note1">Combinación de leche de tigre (Ajinimoto, brandy, pimentón, cebolla, limón, naranja, leche de coco, gotas de sambal, cilantro) y champiñones, servido con media lunas de mango.</p>
                                         <div class="text-end">
                                             <span class=""><strong>$22.500</strong></span>
                                         </div>
@@ -1813,7 +1815,7 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingFour">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        POSTRES
+                            POSTRES
                         </button>
                     </h2>
                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample" style="">
@@ -1885,34 +1887,51 @@
                 <div class="modal-content">
                     <img src="https://raw.githubusercontent.com/bmao92/borrador-kathmandu/main/93bda0ad-11b5-4b41-b5c8-8b58260da6d2.jpg">
                     <button id="btnCloseModal" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                    X
+                        X
                     </button>
                 </div>
             </div>
         </div>
     </div>
 
-<script type="text/javascript">
-    $(document).ready(function () {
-        //Load
-    });
-
-    var mybutton = document.getElementById("myBtn"); {
-                mybutton.style.display = "none";
-            };
-
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document
-    
+    <script type="text/javascript">
+      $(document).ready(function () {
+            // $("#eventModal").modal("toggle")
+            var leySeca = true;
+            var dt = new Date();
+            var time = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
+            var weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            var options = { weekday: 'long' };
+            var a = new Date();
+            var dat = a.toLocaleDateString('en-EN', options);
+            // alert(weekday[a.getDay()]);
+            if (leySeca) {
+                if (dt.getDate() >= 18 && dt.getHours() >= 17 || dt.getDate() <= 20 && dt.getHours() <= 12 ) { 
+                    $("[aria-controls=collapsCoctelseOne], [aria-controls=collapsCoctelseTwo], [aria-controls=collapsCoctelseFour], [aria-controls=collapsCoctelseFive], [aria-controls=collapsCoctelseSeven], [aria-controls=collapsCoctelseEight], [aria-controls=collapsCoctelseNine]").addClass("d-none");
+                    $("#collapsCoctelseOne, #collapsCoctelseTwo, #collapsCoctelseFour, #collapsCoctelseFive, #collapsCoctelseSeven, #collapsCoctelseEight, #collapsCoctelseNine").addClass("d-none");
+                    $("#leysecaletrero").removeClass("d-none");
+                };
+            }
+            
+        });
+      
+      var mybutton = document.getElementById("myBtn");
+      
         // When the user scrolls down 20px from the top of the document, show the button
         window.onscroll = function () { scrollFunction() };
-
+        
         function scrollFunction() {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                 mybutton.style.display = "block";
-            } el.body.scrollTop = 0;
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
-        };
-
-</script>
+        }
+        
+    </script>
