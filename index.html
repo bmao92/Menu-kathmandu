@@ -1906,11 +1906,9 @@
             var dat = a.toLocaleDateString('en-EN', options);
             // alert(weekday[a.getDay()]);
             if (leySeca) {
-                if (dt.getDate() >= 18 && dt.getHours() >= 17 || dt.getDate() <= 20 && dt.getHours() <= 12 ) { 
-                    $("[aria-controls=collapsCoctelseOne], [aria-controls=collapsCoctelseTwo], [aria-controls=collapsCoctelseFour], [aria-controls=collapsCoctelseFive], [aria-controls=collapsCoctelseSeven], [aria-controls=collapsCoctelseEight], [aria-controls=collapsCoctelseNine]").addClass("d-none");
+                $("[aria-controls=collapsCoctelseOne], [aria-controls=collapsCoctelseTwo], [aria-controls=collapsCoctelseFour], [aria-controls=collapsCoctelseFive], [aria-controls=collapsCoctelseSeven], [aria-controls=collapsCoctelseEight], [aria-controls=collapsCoctelseNine]").addClass("d-none");
                     $("#collapsCoctelseOne, #collapsCoctelseTwo, #collapsCoctelseFour, #collapsCoctelseFive, #collapsCoctelseSeven, #collapsCoctelseEight, #collapsCoctelseNine").addClass("d-none");
                     $("#leysecaletrero").removeClass("d-none");
-                };
             }
             
         });
