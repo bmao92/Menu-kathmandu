@@ -1302,3 +1302,24 @@ footer{
   font-weight: bold;
   font-variant: petite-caps;
 }
+
+
+.colormodal{
+   position: absolute;
+    background: #000000d1;
+    bottom: 0;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+}
+
+.verfoto img{
+      width: 17px;
+}
+
+.verfoto {
+   color: #131393;
+    font-weight: 500;
+    font-size: 13px;
+    text-decoration: none;
+}
