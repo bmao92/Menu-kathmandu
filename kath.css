@@ -1273,7 +1273,7 @@ footer{
 }
 
 .backFooter{
-  background: #f1f1f1;
+  background: #e0dbdb;
   width: 90%;
   margin: auto;
   padding: 10px 5px 15px;
@@ -1290,8 +1290,9 @@ footer{
 
 .backFooter a{
   color: black;
-    text-decoration: none;
-    font-weight: 500;
+  text-decoration: none;
+  font-weight: 500;
+  height: 240px;
 }
 
 .redesS  {
