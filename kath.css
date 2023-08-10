@@ -1325,3 +1325,11 @@ footer{
     font-size: 13px;
     text-decoration: none;
 }
+
+
+.accordion-button:focus {
+    z-index: 3;
+    border-color: transparent!important;
+    outline: 0;
+    box-shadow: none!important;
+}
