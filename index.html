@@ -23,7 +23,7 @@
     <button onclick="topFunction()" id="myBtn" title="Go to top" style="display: none;"><i class="fa fa-chevron-up" aria-hidden="true"></i><br>
         <span>Ir arriba</span>
     </button>
-    <div class="container" style="max-width: 500px; margin-bottom: 80px; position: relative; z-index: 50">
+    <div class="container" style="max-width: 500px; margin-bottom: 80px; z-index: 50">
         <div>
             <nav class="fixed-top navbar navbar-dark">
                 <div class="container-fluid kheader pb-2">
@@ -1409,6 +1409,7 @@
                                         <div class="text-end">
                                             <h6>$30.000</h6>
                                         </div>
+                                        <a class="verfoto" id="torta" onclick="showProduct(this)"><img src="icoKath/zoom.ico">Visualizar</a>
                                     </div>
                                 </div>
                                 
@@ -1421,10 +1422,11 @@
         <div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
-                    <img src="https://kathmandusite.com/wp-content/uploads/2017/05/publicacio%CC%81n-redes.jpg">
+                    <img id="modalImg" src="productos/torta.jpeg">
                     <button id="btnCloseModal" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                         X
                     </button>
+                    <span class="colormodal">Imagen ilustrativa, el producto puede tener algunas variaciones, dependiendo el sabor</span>
                 </div>
             </div>
         </div>
@@ -1455,7 +1457,6 @@
 
     <script type="text/javascript">
       $(document).ready(function () {
-            // $("#eventModal").modal("toggle")
         var leySeca = false;
         var dt = new Date();
         var time = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
@@ -1489,6 +1490,16 @@
     function topFunction() {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
+    }
+
+    function showProduct(id) {
+        let x = "";
+        if (id.id === "torta") {
+            x = "productos/torta.jpeg";
+            $("#modalImg").attr("src", x);
+            $("#eventModal").modal("toggle");
+        };
+       
     }
 
 </script>
