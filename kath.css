@@ -1252,3 +1252,12 @@ h6.text-center {
         background: rgba(117, 133, 149, 0.55);
     }
 }
+
+
+h7.proveen{
+   font-style: italic;
+    font-size: 12px;
+    margin-top: -5px;
+    display: block;
+    margin-bottom: 10px;
+}
