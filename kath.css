@@ -1340,5 +1340,6 @@ td.bg-no {
 
 td.bg-noTTT {
     background: #c1c1c1!important;
-    border: 1px solid #c3c3c3;
+    border-right: 1px solid #c3c3c3;
+    border-left: 1px solid #c3c3c3;
 }
