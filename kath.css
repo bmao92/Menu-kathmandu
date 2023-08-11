@@ -1333,3 +1333,7 @@ footer{
     outline: 0;
     box-shadow: none!important;
 }
+
+td.bg-no {
+    background: #c5c5c6!important;
+}
