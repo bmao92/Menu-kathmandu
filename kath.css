@@ -103,6 +103,7 @@ h6 .opc>img,h6>img {
 body {
 /* background: #000 url('https://kathmandusite.com/wp-content/uploads/2020/04/post3.jpg') repeat fixed center top;*/
  background: #000 url('productos/back1.jpeg') no-repeat fixed center top;
+ background-size: 100% auto;
  /* padding-bottom: 218px; */
 }
 
