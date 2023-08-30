@@ -1335,3 +1335,17 @@ footer{
     outline: 0;
     box-shadow: 0 0 0 0.25rem transparent!IMPORTANT;
 }
+
+
+h7.NewProduct {
+    font-weight: 800;
+    background: #b54468;
+    color: #000000;
+    padding: 0px 13px;
+    position: absolute;
+    right: 30px;
+    margin-top: -30px;
+    border: 3px double #f5e4d1;
+    border-radius: 10px;
+    font-size: 12px;
+}
