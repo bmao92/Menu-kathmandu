@@ -1359,3 +1359,16 @@ h7.NewProduct {
     right: -360px;
     margin-bottom: 10px;
 }
+
+@media (max-width: 510px) {
+
+ h7.NewProduct {
+    padding: 0px 13px;
+    position: absolute;
+    right: 30px;
+    margin-top: -30px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+    
+}
