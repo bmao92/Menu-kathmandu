@@ -20,6 +20,7 @@
  display: none
 }
 
+
 .a1::after {
  position: relative;
  margin: auto;
@@ -102,12 +103,15 @@ h6 .opc>img,h6>img {
 
 body {
 /* background: #000 url('https://kathmandusite.com/wp-content/uploads/2020/04/post3.jpg') repeat fixed center top;*/
-background: rgb(2,0,36);
-background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(191,150,247,1) 34%, rgba(96,49,129,1) 97%);
- background-size: 100% auto;
- /* padding-bottom: 218px; */
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(191,150,247,1) 34%, rgba(96,49,129,1) 97%);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+ padding-top: 10px;
 }
 
+html{
+ background: #603181;
+}
 #collapseOne .a1,.bg-no {
  background: #dee2e6!important
 }
