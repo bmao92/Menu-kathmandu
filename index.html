@@ -19,11 +19,11 @@
 
         .phantom-logo{
             height: 12px;
-    width: 21px;
-    background: #0c0c0c;
-    position: relative;
-    top: -76px;
-    margin: auto;
+            width: 21px;
+            background: #0c0c0c;
+            position: relative;
+            top: -76px;
+            margin: auto;
         }
     </style>
 </head>
@@ -85,7 +85,7 @@
                                                 </div>
                                             </div>
 
-                                             <div class="border col-6">
+                                            <div class="border col-6">
                                                 <div class="p-3">
                                                     <span class="rtrt">★ RECOMENDADO</span>
                                                     <h6><strong>HILO ROJO</strong></h6>
@@ -639,7 +639,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                             
+
                                             <div class="border col-6">
                                                 <div class="p-3">
                                                     <h6><strong>TÓNICA 1976</strong></h6>
@@ -702,7 +702,7 @@
                                                 </div>
                                             </div>
 
-                                             <div class="border col-6 d-none">
+                                            <div class="border col-6 d-none">
                                                 <div class="p-3">
                                                     <h6><strong>MORITZ 7</strong></h6>
                                                     <p class="m-0 note1"></p>
@@ -1060,7 +1060,7 @@
                         <div class="accordion-body fuuu">
                             <div class="row fuer">
                                 <div class="divColorMenu">
-                                    
+
                                     <div class="" style="padding-top: 10px!important">
                                         <h6><strong>SAMOSAS (Carne<span class=""> o vegetales</span>)</strong><img src="icoKath/1598080.png"></h6>
                                         <p class="m-0 note1">Empanadillas hindues rellenas de carne o vegetales acompañadas de chutney de tomate y tamarindo (2 unidades).</p>
@@ -1262,7 +1262,7 @@
                                         </div>
                                     </div>
 
-                                     <div class="">
+                                    <div class="">
                                         <h6><strong>NASI GORENG</strong><img src="icoKath/1598080.png"></h6>
                                         <h7 class="proveen"> ~ Indonesia ~ </h7>
                                         <p class="m-0 note1">Plato tradicional de la cocina Indonesa. Arroz salteado al wok, con pollo, vegetales, cerdo y camarones tempurizados.</p>
@@ -1525,20 +1525,41 @@
 
     <script type="text/javascript">
       $(document).ready(function () {
-        var leySeca = true;
+
         var dt = new Date();
-        var time = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
+        var hora = dt.getHours();
+        if ( hora < 10) {
+            hora = '0' + hora;
+        };
+        var HoraDia = hora + ":" + dt.getMinutes();
         var weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
         var options = { weekday: 'long' };
         var a = new Date();
         var dat = a.toLocaleDateString('en-EN', options);
             // alert(weekday[a.getDay()]);
-        if (leySeca) {
-            $("[aria-controls=collapsCoctelseOne], [aria-controls=collapsCoctelseTwo], [aria-controls=collapsCoctelseFour], [aria-controls=collapsCoctelseFive], [aria-controls=collapsCoctelseSeven], [aria-controls=collapsCoctelseEight], [aria-controls=collapsCoctelseNine]").addClass("d-none");
-            $("#collapsCoctelseOne, #collapsCoctelseTwo, #collapsCoctelseFour, #collapsCoctelseFive, #collapsCoctelseSeven, #collapsCoctelseEight, #collapsCoctelseNine").addClass("d-none");
-            $("#leysecaletrero").removeClass("d-none");
-        }
+        var dia = dt.getDate().toString().padStart(2, "0");
+        var mes = dt.getMonth() + 1;
+        var hoy = "" + dt.getFullYear() + "/" + mes + "/" + dia + "";
 
+        var inicio_LeySeca = '2023/10/28';
+        var inicio_hora_leySeca = '18:00';
+        var fin_leySeca = '2023/10/30';
+        var fin_horaleySeca = '06:00';
+        
+
+        // HoraDia = "06:05"
+        // hoy = "2023/10/31";
+
+        
+        if (hoy >= inicio_LeySeca && hoy <= fin_leySeca) {
+            if (hoy === inicio_LeySeca && HoraDia < inicio_hora_leySeca || hoy === fin_leySeca && HoraDia > fin_horaleySeca) {
+                leySeca = false
+            } else {
+                $("[aria-controls=collapsCoctelseOne], [aria-controls=collapsCoctelseTwo], [aria-controls=collapsCoctelseFour], [aria-controls=collapsCoctelseFive], [aria-controls=collapsCoctelseSeven], [aria-controls=collapsCoctelseEight], [aria-controls=collapsCoctelseNine]").addClass("d-none");
+                $("#collapsCoctelseOne, #collapsCoctelseTwo, #collapsCoctelseFour, #collapsCoctelseFive, #collapsCoctelseSeven, #collapsCoctelseEight, #collapsCoctelseNine").addClass("d-none");
+                $("#leysecaletrero").removeClass("d-none");
+            };
+        };
     });
 
       var mybutton = document.getElementById("myBtn");
@@ -1552,13 +1573,13 @@
         } else {
             mybutton.style.display = "none";
         }
-    }
+    };
 
         // When the user clicks on the button, scroll to the top of the document
     function topFunction() {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
-    }
+    };
 
     function showProduct(id) {
         let x = "";
@@ -1567,7 +1588,6 @@
             $("#modalImg").attr("src", x);
             $("#eventModal").modal("toggle");
         };
-       
-    }
+    };
 
 </script>
