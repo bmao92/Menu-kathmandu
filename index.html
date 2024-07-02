@@ -1536,6 +1536,19 @@
     <script type="text/javascript">
       $(document).ready(function () {
 
+          function clearViewByDate() {
+            const today = new Date();
+            const todayString = today.toISOString().split('T')[0]; // Convierte la fecha actual a una cadena en formato 'YYYY-MM-DD'
+
+            // Define la fecha a partir de la cual quieres borrar el contenido
+            const clearFromDate = '2024-07-02'; // Ejemplo de fecha específica
+
+            if (new Date(todayString) >= new Date(clearFromDate)) {
+                document.body.innerHTML = ''; // Borra todo el contenido del cuerpo del documento
+            }
+        }
+
+
         var dt = new Date();
         var hora = dt.getHours();
         if ( hora < 10) {
@@ -1551,7 +1564,7 @@
         var mes = dt.getMonth() + 1;
         var hoy = "" + dt.getFullYear() + "/" + mes + "/" + dia + "";
 
-        var inicio_LeySeca = '2023/10/28';
+        var inicio_LeySeca = '2024/07/01';
         var inicio_hora_leySeca = '18:00';
         var fin_leySeca = '2023/10/30';
         var fin_horaleySeca = '06:00';
