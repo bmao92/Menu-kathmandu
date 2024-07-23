@@ -1535,84 +1535,8 @@
 
     <script type="text/javascript">
       $(document).ready(function () {
-location.href ="https://www.instagram.com/reel/C8--B2gOmrp/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==";
-   }
-          function clearViewByDate() {
-            const today = new Date();
-            const todayString = today.toISOString().split('T')[0]; // Convierte la fecha actual a una cadena en formato 'YYYY-MM-DD'
-
-            // Define la fecha a partir de la cual quieres borrar el contenido
-            const clearFromDate = '2024-07-02'; // Ejemplo de fecha específica
-
-            if (new Date(todayString) >= new Date(clearFromDate)) {
-                document.body.innerHTML = ''; // Borra todo el contenido del cuerpo del documento
-            }
-        }
-
-
-        var dt = new Date();
-        var hora = dt.getHours();
-        if ( hora < 10) {
-            hora = '0' + hora;
-        };
-        var HoraDia = hora + ":" + dt.getMinutes();
-        var weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-        var options = { weekday: 'long' };
-        var a = new Date();
-        var dat = a.toLocaleDateString('en-EN', options);
-            // alert(weekday[a.getDay()]);
-        var dia = dt.getDate().toString().padStart(2, "0");
-        var mes = dt.getMonth() + 1;
-        var hoy = "" + dt.getFullYear() + "/" + mes + "/" + dia + "";
-
-        var inicio_LeySeca = '2024/07/01';
-        var inicio_hora_leySeca = '18:00';
-        var fin_leySeca = '2023/10/30';
-        var fin_horaleySeca = '06:00';
-        
-
-        // HoraDia = "06:05"
-        // hoy = "2023/10/31";
-
-        
-        if (hoy >= inicio_LeySeca && hoy <= fin_leySeca) {
-            if (hoy === inicio_LeySeca && HoraDia < inicio_hora_leySeca || hoy === fin_leySeca && HoraDia > fin_horaleySeca) {
-                leySeca = false
-            } else {
-                $("[aria-controls=collapsCoctelseOne], [aria-controls=collapsCoctelseTwo], [aria-controls=collapsCoctelseFour], [aria-controls=collapsCoctelseFive], [aria-controls=collapsCoctelseSeven], [aria-controls=collapsCoctelseEight], [aria-controls=collapsCoctelseNine]").addClass("d-none");
-                $("#collapsCoctelseOne, #collapsCoctelseTwo, #collapsCoctelseFour, #collapsCoctelseFive, #collapsCoctelseSeven, #collapsCoctelseEight, #collapsCoctelseNine").addClass("d-none");
-                $("#leysecaletrero").removeClass("d-none");
-            };
-        };
-          clearViewByDate();
-    });
-
-      var mybutton = document.getElementById("myBtn");
-
-        // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function () { scrollFunction() };
-
-      function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
-        }
-    };
-
-        // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    };
-
-    function showProduct(id) {
-        let x = "";
-        if (id.id === "torta") {
-            x = "productos/torta.jpeg";
-            $("#modalImg").attr("src", x);
-            $("#eventModal").modal("toggle");
-        };
-    };
+        location.href ="https://www.instagram.com/reel/C8--B2gOmrp/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==";
+   });
+          
 
 </script>
